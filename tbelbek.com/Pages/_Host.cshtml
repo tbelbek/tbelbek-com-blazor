@@ -48,7 +48,7 @@
                  style="display: none; visibility: hidden">
         </emframe>
     </noscript>
-    <script>
+<script>
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -65,16 +65,8 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-56CQ2S');
     </script>
-    @if (culture.Name.ToString() == "tr")
-    {
-        <component type="typeof(IndexTurkish)" render-mode="ServerPrerendered" />
-        System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("tr-TR");
-    }
-    else
-    {
-        <component type="typeof(IndexEnglish)" render-mode="ServerPrerendered" />
-        System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
-    }
+
+    <component type="typeof(IndexEnglish)" render-mode="ServerPrerendered" />
     <component type="typeof(AboutComponent)" render-mode="ServerPrerendered" />
     <component type="typeof(ResumeComponent)" render-mode="ServerPrerendered" />
     <component type="typeof(PortfolioComponent)" render-mode="ServerPrerendered" />
