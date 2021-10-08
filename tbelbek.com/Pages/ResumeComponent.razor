@@ -1,46 +1,48 @@
-﻿<!-- Resume Section
+﻿@using tbelbek.com.Data
+@inject IStringLocalizer<WeatherForecast> L
+<!-- Resume Section
 ================================================== -->
 <section id="resume">
     <!-- Work
     ----------------------------------------------- -->
     <div class="row work">
         <div class="three columns header-col">
-            <h1><span>@Resources.Work</span></h1>
+            <h1><span>@L["Work"]</span></h1>
         </div>
         <div class="nine columns main-col">
             <div class="row item">
                 <div class="twelve columns">
                     <h3>KoçSistem</h3>
                     <p class="info">Software Development Technology Manager<span>&bull;</span> <em
-                            class="date">@Resources.Haziran 2021 - @Resources.Now</em></p>
+                            class="date">@L["Haziran 2021"] - @L["Now"]</em></p>
                 </div>
             </div>
             <div class="row item">
                 <div class="twelve columns">
                     <h3>KoçSistem</h3>
-                    <p class="info">Software Development Lead<span>&bull;</span> <em class="date">@Resources.Mart 2020 -
-                            @Resources.Haziran 2021</em></p>
+                    <p class="info">Software Development Lead<span>&bull;</span> <em class="date">@L["Mart 2020"] -
+                            @L["Haziran 2021"]</em></p>
                 </div>
             </div>
             <div class="row item">
                 <div class="twelve columns">
                     <h3>KoçSistem</h3>
-                    <p class="info">Software Developer<span>&bull;</span> <em class="date">@Resources.Mart 2018 -
-                            @Resources.Mart 2020</em></p>
+                    <p class="info">Software Developer<span>&bull;</span> <em class="date">@L["Mart 2018"] -
+                            @L["Mart 2020"]</em></p>
                 </div>
             </div>
             <div class="row item">
                 <div class="twelve columns">
                     <h3>Antasya Software</h3>
-                    <p class="info">Software Specialist <span>&bull;</span> <em class="date">@Resources.Aralik 2016 -
-                            @Resources.Mart 2018</em></p>
+                    <p class="info">Software Specialist <span>&bull;</span> <em class="date">@L["Aralik 2016"] -
+                            @L["Mart 2018"]</em></p>
                 </div>
             </div>
             <div class="row item">
                 <div class="twelve columns">
                     <h3>BilgeAdam</h3>
-                    <p class="info">Software Consultancy <span>&bull;</span> <em class="date">@Resources.Agustos 2014 -
-                            @Resources.Aralik 2016</em></p>
+                    <p class="info">Software Consultancy <span>&bull;</span> <em class="date">@L["Agustos 2014"] -
+                            @L["Aralik 2016"]</em></p>
 
                 </div>
             </div> <!-- item end -->
@@ -50,7 +52,7 @@
     ----------------------------------------------- -->
     <div class="row education">
         <div class="three columns header-col">
-            <h1><span>@Resources.SchoolLife</span></h1>
+            <h1><span>@L["SchoolLife"]</span></h1>
         </div>
         <div class="nine columns main-col">
             <!--<div class="row item">
@@ -58,9 +60,9 @@
                     <img src="~/Content/images/spclst.png" style="width: 200px;" alt="">-->
             <!--                   <div id="mcplogo" style="float:left;"></div> -->
             <!--<div id="mcpmetin" style="float: left;">
-                        <p class="info">HTML, CSS3, JavaScript, jQuery<span>&bull;</span> <em class="date">@Resources.Nisan 2015</em></p>
+                        <p class="info">HTML, CSS3, JavaScript, jQuery<span>&bull;</span> <em class="date">@L["Nisan 2015"]</em></p>
                         <p>
-            @Resources.Education1
+            @L["Education1"]
                         </p>
                     </div>
                 </div>
@@ -69,9 +71,9 @@
             <!--<div class="row item">
                 <div class="twelve columns">
                     <h3>NBUY Programı - BilgeAdam</h3>
-                    <p class="info">@Resources.EducationTag1 <span>&bull;</span> <em class="date">@Resources.Haziran 2014</em></p>
+                    <p class="info">@L["EducationTag1"] <span>&bull;</span> <em class="date">@L["Haziran 2014"]</em></p>
                     <p>
-            @Resources.Education2
+            @L["Education2"]
                     </p>
                 </div>
             </div>-->
@@ -79,17 +81,15 @@
             <div class="row item">
                 <div class="twelve columns">
                     <h3>Beykent Üniversitesi</h3>
-                    <p class="info">@Resources.EducationTag4 <span>&bull;</span> <em class="date">@Resources.Haziran
-                            2017</em></p>
+                    <p class="info">@L["EducationTag4"] <span>&bull;</span> <em class="date">@L["Haziran 2017"]</em></p>
                 </div>
             </div> <!-- item end -->
             <div class="row item">
                 <div class="twelve columns">
                     <h3>Marmara Üniversitesi</h3>
-                    <p class="info">@Resources.EducationTag2 <span>&bull;</span> <em class="date">@Resources.Haziran
-                            2014</em></p>
+                    <p class="info">@L["EducationTag2"] <span>&bull;</span> <em class="date">@L["Haziran 2014"]</em></p>
                     <p>
-                        @Resources.Education3
+                        @L["Education3"]
                     </p>
                 </div>
             </div> <!-- item end -->
@@ -101,9 +101,9 @@
             <!--<div class="row item">
                 <div class="twelve columns">
                     <h3>Web Tasarım - İsmek</h3>
-                    <p class="info">@Resources.EducationTag3 <span>&bull;</span> <em class="date">@Resources.Haziran 2014</em></p>
+                    <p class="info">@L["EducationTag3"] <span>&bull;</span> <em class="date">@L["Haziran 2014"]</em></p>
                     <p>
-            @Resources.Education4
+            @L["Education4"]
                     </p>
                 </div>
             </div>-->
@@ -115,11 +115,11 @@
     ----------------------------------------------- -->
     <div class="row skill">
         <div class="three columns header-col">
-            <h1><span>@Resources.Skills</span></h1>
+            <h1><span>@L["Skills"]</span></h1>
         </div>
         <div class="nine columns main-col">
             <p>
-                @Resources.SkillsExplanation
+                @L["SkillsExplanation"]
             </p>
             <div class="bars">
                 <ul class="skills">

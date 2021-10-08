@@ -8,13 +8,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="">
+    <meta name="author" content="Tuğhan Belbek">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS
+    ================================================== -->
+    <link href="css/default.css" rel="stylesheet"/>
+    <link href="css/fonts.css" rel="stylesheet"/>
+    <link href="css/layout.css" rel="stylesheet"/>
+    <link href="css/media-queries.css" rel="stylesheet"/>
+    <link href="css/magnific-popup.css" rel="stylesheet"/>
+    <!-- Script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/Image.jpg">
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>tbelbek.com</title>
-    <base href="~/"/>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
-    <link href="css/site.css" rel="stylesheet"/>
-    <link href="tbelbek.com.styles.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @if (new List<int> { 11, 12, 1, 2 }.Contains(DateTime.Now.Month))
+    {
+        <script src="js/snow.js"></script>
+    }
 </head>
 <body>
 <!-- Google Tag Manager -->
@@ -41,36 +62,24 @@
         })(window, document, 'script', 'dataLayer', 'GTM-56CQ2S');
     </script>
 
-<component type="typeof(IndexEnglish)" render-mode="ServerPrerendered"/>
-
-<div id="blazor-error-ui">
-    <environment include="Staging,Production">
-        An error has occurred. This application may no longer respond until reloaded.
-    </environment>
-    <environment include="Development">
-        An unhandled exception has occurred. See browser dev tools for details.
-    </environment>
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
-</div>
+@* <component type="typeof(IndexEnglish)" render-mode="ServerPrerendered"/> *@
+<component type="typeof(IndexTurkish)" render-mode="ServerPrerendered"/>
+<component type="typeof(AboutComponent)" render-mode="ServerPrerendered"/>
+<component type="typeof(ResumeComponent)" render-mode="ServerPrerendered"/>
+<component type="typeof(PortfolioComponent)" render-mode="ServerPrerendered"/>
+<component type="typeof(TestimonialComponent)" render-mode="ServerPrerendered"/>
 
 <footer>
     <div class="row">
         <div class="twelve columns">
             <ul class="social-links">
-                @*<li>
-                        <a href="http://facebook.com/tbelbek"><em class="fa fa-facebook"></em></a>
-                        </li>
-                        <li>
-                        <a href="http://twitter.com/redstreetwalker"><em class="fa fa-twitter"></em></a>
-                        </li>*@
                 <li>
-                    <a href="http://linkedin.com/in/tbelbek">
+                    <a href="https://linkedin.com/in/tbelbek">
                         <em class="fa fa-2x fa-linkedin"></em>
                     </a>
                 </li>
                 <li>
-                    <a href="http://instagram.com/tbelbek">
+                    <a href="https://instagram.com/tbelbek">
                         <em class="fa fa-2x fa-instagram"></em>
                     </a>
                 </li>
@@ -88,7 +97,7 @@
             <ul class="copyright">
                 <li>&copy; Copyright @DateTime.Now.Year T.Belbek</li>
                 <li>
-                    Design by <a title="T.Belbek" href="http://linkedin.com/in/tbelbek">TB</a>
+                    Design by <a title="T.Belbek" href="https://linkedin.com/in/tbelbek">TB</a>
                 </li>
                 <li>
                     Powered by
@@ -107,16 +116,13 @@
         </div>
     </div>
 </footer> <!-- Footer End-->
-
-
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/init.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/waypoints.js"></script>
+<script src="js/magnific-popup.js"></script>
+<script src="js/jquery.fittext.js"></script>
 <script src="_framework/blazor.server.js"></script>
-<script src="~/Content/js/jquery-migrate-1.2.1.min.js"></script>
-<script src="~/Content/js/jquery-1.10.2.min.js"></script>
-<script src="~/Content/js/init.js"></script>
-<script src="~/Content/js/jquery.flexslider.js"></script>
-<script src="~/Content/js/waypoints.js"></script>
-<script src="~/Content/js/magnific-popup.js"></script>
-<script src="~/Content/js/jquery.fittext.js"></script>
-
 </body>
 </html>

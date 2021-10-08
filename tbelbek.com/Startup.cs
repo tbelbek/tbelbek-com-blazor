@@ -7,8 +7,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Localization;
 using tbelbek.com.Data;
 
 namespace tbelbek.com
@@ -29,6 +31,27 @@ namespace tbelbek.com
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+
+            #region Localization
+
+            // Set the resx file folder path to access
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+            // Register the Syncfusion locale service to customize the  SyncfusionBlazor component locale culture
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                // Define the list of cultures your app will support
+                var supportedCultures = new List<CultureInfo>()
+                {
+                    new CultureInfo("en-US"),
+                    new CultureInfo("tr-TR")
+                };
+                // Set the default culture
+                options.DefaultRequestCulture = new RequestCulture("en-US");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
+
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,10 +1,14 @@
-﻿<!-- Testimonials Section
+﻿@using tbelbek.com.Data
+@inject IStringLocalizer<WeatherForecast> L
+<!-- Testimonials Section
 ================================================== -->
 <section id="testimonials">
     <div class="text-container">
         <div class="row">
             <div class="two columns header-col">
-                <h1><span>@Resources.FromMyPerspective</span></h1>
+                <h1>
+                    <span>@L["FromMyPerspective"]</span>
+                </h1>
             </div>
             <div class="ten columns flex-container">
                 <div class="flexslider">
@@ -12,22 +16,22 @@
                         <li>
                             <blockquote>
                                 <p>
-                                    @Resources.Testimonial1
+                                    @L["Testimonial1"]
                                 </p>
-                                <cite>@Resources.Quote1</cite>
+                                <cite>@L["Quote1"]</cite>
                             </blockquote>
                         </li> <!-- slide ends -->
                         <li>
                             <blockquote>
                                 <p>
-                                    @Resources.Testimonial2
+                                    @L["Testimonial2"]
                                 </p>
-                                <cite>@Resources.Quote2</cite>
+                                <cite>@L["Quote2"]</cite>
                             </blockquote>
                         </li> <!-- slide ends -->
                     </ul>
                 </div> <!-- div.flexslider ends -->
             </div> <!-- div.flex-container ends -->
         </div> <!-- row ends -->
-    </div>  <!-- text-container ends -->
+    </div> <!-- text-container ends -->
 </section> <!-- Testimonials Section End-->

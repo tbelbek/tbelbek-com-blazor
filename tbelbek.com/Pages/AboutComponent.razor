@@ -1,18 +1,20 @@
-﻿<!-- About Section
+﻿@using tbelbek.com.Data
+@inject IStringLocalizer<WeatherForecast> L
+<!-- About Section
 ================================================== -->
 <section id="about">
     <div class="row">
         <div class="three columns">
-            <img class="profile-pic" src="images/profilepic.jpg" alt="" />
+            <img class="profile-pic" src="images/profilepic.jpg" alt=""/>
         </div>
         <div class="nine columns main-col">
-            <h2>@Resources.Hakkimda</h2>
+            <h2>@L["Hakkimda"]</h2>
             <p>
-                @Resources.AboutTxt
+                @L["AboutTxt"]
             </p>
             <div class="row">
                 <div class="columns contact-details">
-                    <h2>@Resources.IletisimDetaylari</h2>
+                    <h2>@L["IletisimDetaylari"]</h2>
                     <p class="address">
                         <span>Tuğhan Belbek</span><br>
                         <span>
@@ -22,7 +24,7 @@
                         <a href="mailto:tughanbelbek@gmail.com">tughanbelbek@gmail.com</a>
                     </p>
                     <p>
-                        <a href="Tughan_Belbek_Resume.pdf" download="@fileName" style="font-size:x-large"><em class="fa fa-angle-down fa-2x bounce"></em>&nbsp;&nbsp;@Resources.CvIndir</a>
+                        <a href="Tughan_Belbek_Resume.pdf" download="@fileName" style="font-size:x-large"><em class="fa fa-angle-down fa-2x bounce"></em>&nbsp;&nbsp;@L["CvIndir"]</a>
                     </p>
                 </div>
                 <div class="columns download">
