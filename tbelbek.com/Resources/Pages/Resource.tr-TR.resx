@@ -314,4 +314,7 @@
   <data name="ShowMenu" xml:space="preserve">
     <value>Menüyü Göster</value>
   </data>
+  <data name="Merhaba" xml:space="preserve">
+    <value>Merhaba.</value>
+  </data>
 </root>

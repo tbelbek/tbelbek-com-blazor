@@ -169,10 +169,6 @@ N
 tbelbek.com/wwwroot/js/init.js,3\d\3d60916eea7c282b72269fc44935df01c6b88184
 \
 ,tbelbek.com/Pages/TestimonialComponent.razor,f\0\f07ff4074284d0a8948ae7049719bef72abf4489
-T
-$tbelbek.com/Pages/IndexTurkish.razor,0\5\054852ba1239834cc60513b06d3a0eb949500729
-F
-tbelbek.com/Startup.cs,8\1\813c7ac1492d6215786aba36a62d0412d3d496a8
 J
 tbelbek.com/_Imports.razor,0\d\0d1d16d76ff3a771f3ad14a4b74d9a636b3950a3
 E

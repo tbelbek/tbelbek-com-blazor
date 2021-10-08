@@ -315,4 +315,7 @@ and learn more &lt;a class="smoothscroll" href="#about" style="color:darkorange;
   <data name="Fikirler" xml:space="preserve">
     <value>About My Job</value>
   </data>
+  <data name="Merhaba" xml:space="preserve">
+    <value>I'm Tughan Belbek.</value>
+  </data>
 </root>
