@@ -1,5 +1,6 @@
 ﻿@using tbelbek.com.Data
-@inject IStringLocalizer<WeatherForecast> L
+@inject IJSRuntime JS
+@inject IStringLocalizer<TestimonialComponent> L
 <!-- Testimonials Section
 ================================================== -->
 <section id="testimonials">
@@ -35,3 +36,13 @@
         </div> <!-- row ends -->
     </div> <!-- text-container ends -->
 </section> <!-- Testimonials Section End-->
+
+@code{
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("loadInit");
+        }
+    }
+}

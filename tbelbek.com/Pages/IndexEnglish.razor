@@ -1,6 +1,7 @@
 ﻿@page "/EN"
 @using tbelbek.com.Data
-@inject IStringLocalizer<WeatherForecast> L 
+@using System.Globalization
+@inject IStringLocalizer<IndexEnglish> L 
 
 <!-- Header
 ================================================== -->
@@ -82,8 +83,6 @@
     </p>
 </header>
 <!-- Header End -->
-
-<component type="typeof(IndexEnglish)" render-mode="ServerPrerendered"/>
 
 @code {
     string fileName = string.Concat("tbelbek_CV_", DateTime.Now.ToShortDateString(), ".pdf");
