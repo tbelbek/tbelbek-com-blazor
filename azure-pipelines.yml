@@ -26,17 +26,20 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '**/tbelbek.com*.csproj'
-  displayName: 'Build projects'
-  
+    projects: '**/tbelbek.com.csproj'
+
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
     publishWebProjects: false
     projects: '**/tbelbek.com.csproj'
-    arguments: '--configuration $(buildConfiguration)'
-    modifyOutputPath: false
-  displayName: 'Publish Site'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+    StoreAsTar: true
 
 
 
