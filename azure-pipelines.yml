@@ -10,7 +10,6 @@ pool:
   name: 'Default'
 
 variables:
-  solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
@@ -21,16 +20,32 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
-- task: VSBuild@1
+# - task: UseDotNet@2
+#   inputs:
+#     packageType: 'sdk'
+#     version: '5.0.x'
+
+- task: DotNetCoreCLI@2
+  displayName: 'NuGet restore'
   inputs:
-    solution: '$(solution)'
-    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    command: 'restore'
+    projects: '**/tbelbek.com.csproj'
+    verbosityRestore: 'Normal'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Build'
+  inputs:
+    zipAfterPublish: true
+    command: publish
+    publishWebProjects: false
+    projects: '**/tbelbek.com.csproj'
+    arguments: '-c $(Build.Configuration) -o $(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
+  displayName: 'Publish'
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+
 
