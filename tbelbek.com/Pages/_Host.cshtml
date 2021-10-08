@@ -8,28 +8,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>tbelbek.com</title>
-    <base href="~/" />
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-    <link href="css/site.css" rel="stylesheet" />
-    <link href="tbelbek.com.styles.css" rel="stylesheet" />
+    <base href="~/"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+    <link href="css/site.css" rel="stylesheet"/>
+    <link href="tbelbek.com.styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <component type="typeof(App)" render-mode="ServerPrerendered" />
+<!-- Google Tag Manager -->
+<noscript>
+    <emframe title="ggl" src="//www.googletagmanager.com/ns.html?id=GTM-56CQ2S" height="0" width="0"
+             style="display: none; visibility: hidden">
+    </emframe>
+</noscript>
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-56CQ2S');
+    </script>
 
-    <div id="blazor-error-ui">
-        <environment include="Staging,Production">
-            An error has occurred. This application may no longer respond until reloaded.
-        </environment>
-        <environment include="Development">
-            An unhandled exception has occurred. See browser dev tools for details.
-        </environment>
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
+<component type="typeof(IndexEnglish)" render-mode="ServerPrerendered"/>
+
+<div id="blazor-error-ui">
+    <environment include="Staging,Production">
+        An error has occurred. This application may no longer respond until reloaded.
+    </environment>
+    <environment include="Development">
+        An unhandled exception has occurred. See browser dev tools for details.
+    </environment>
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>
+
+<footer>
+    <div class="row">
+        <div class="twelve columns">
+            <ul class="social-links">
+                @*<li>
+                        <a href="http://facebook.com/tbelbek"><em class="fa fa-facebook"></em></a>
+                        </li>
+                        <li>
+                        <a href="http://twitter.com/redstreetwalker"><em class="fa fa-twitter"></em></a>
+                        </li>*@
+                <li>
+                    <a href="http://linkedin.com/in/tbelbek">
+                        <em class="fa fa-2x fa-linkedin"></em>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://instagram.com/tbelbek">
+                        <em class="fa fa-2x fa-instagram"></em>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/tbelbek/">
+                        <em class="fa fa-2x fa-github"></em>
+                    </a>
+                </li>
+                <li>
+                    <a href="skype:tughanbelbek?chat">
+                        <em class="fa fa-2x fa-skype"></em>
+                    </a>
+                </li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Copyright @DateTime.Now.Year T.Belbek</li>
+                <li>
+                    Design by <a title="T.Belbek" href="http://linkedin.com/in/tbelbek">TB</a>
+                </li>
+                <li>
+                    Powered by
+                    <a title="Go To Pipelines"
+                       href="https://azure.microsoft.com/tr-tr/services/devops/pipelines/">
+                        Azure Pipelines
+                    </a>
+                    &nbsp;&amp;&nbsp; <a title="Go To Github" href="https://github.com/">GitHub</a>
+                </li>
+            </ul>
+        </div>
+        <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#home">
+                <em class="icon-up-open"></em>
+            </a>
+        </div>
     </div>
+</footer> <!-- Footer End-->
 
-    <script src="_framework/blazor.server.js"></script>
+
+<script src="_framework/blazor.server.js"></script>
+<script src="~/Content/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="~/Content/js/jquery-1.10.2.min.js"></script>
+<script src="~/Content/js/init.js"></script>
+<script src="~/Content/js/jquery.flexslider.js"></script>
+<script src="~/Content/js/waypoints.js"></script>
+<script src="~/Content/js/magnific-popup.js"></script>
+<script src="~/Content/js/jquery.fittext.js"></script>
+
 </body>
 </html>

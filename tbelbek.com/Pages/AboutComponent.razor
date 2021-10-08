@@ -1,0 +1,42 @@
+﻿<!-- About Section
+================================================== -->
+<section id="about">
+    <div class="row">
+        <div class="three columns">
+            <img class="profile-pic" src="images/profilepic.jpg" alt="" />
+        </div>
+        <div class="nine columns main-col">
+            <h2>@Resources.Hakkimda</h2>
+            <p>
+                @Resources.AboutTxt
+            </p>
+            <div class="row">
+                <div class="columns contact-details">
+                    <h2>@Resources.IletisimDetaylari</h2>
+                    <p class="address">
+                        <span>Tuğhan Belbek</span><br>
+                        <span>
+                            Kadıköy, İstanbul, Türkiye
+                        </span><br>
+                        <a href="tel:+905532658267">0553-265-82-67</a><br>
+                        <a href="mailto:tughanbelbek@gmail.com">tughanbelbek@gmail.com</a>
+                    </p>
+                    <p>
+                        <a href="Tughan_Belbek_Resume.pdf" download="@fileName" style="font-size:x-large"><em class="fa fa-angle-down fa-2x bounce"></em>&nbsp;&nbsp;@Resources.CvIndir</a>
+                    </p>
+                </div>
+                <div class="columns download">
+
+                    <p class="address">
+                        <img alt="CV-QrCode" src="images/qrcode-tbelbek-com.png" width="250"/>
+                    </p>
+                </div>
+            </div> <!-- end row -->
+        </div> <!-- end .main-col -->
+    </div>
+</section> <!-- About Section End-->
+
+
+@code {
+    string fileName = string.Concat("tbelbek_CV_", DateTime.Now.ToShortDateString(), ".pdf");
+}

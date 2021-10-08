@@ -4,6 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>36dfba37-49d5-44ca-8f77-62746cbcdb2e</UserSecretsId>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>

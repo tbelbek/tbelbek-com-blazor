@@ -1,4 +1,9 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+@import url('default.css');
+@import url('fonts.css');
+@import url('layout.css');
+@import url('media-queries.css');
+@import url('magnific-popup.css');
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -42,9 +47,9 @@ a, .btn-link {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
