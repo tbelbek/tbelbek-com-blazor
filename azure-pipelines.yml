@@ -24,12 +24,13 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
   
 - task: DotNetCoreCLI@2
-  displayName: 'Publishing App...'
   inputs:
-    command: publish
-    publishWebProjects: true
-    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-    zipAfterPublish: true
+    command: 'publish'
+    publishWebProjects: false
+    projects: '**/tbelbek.com.csproj'
+    arguments: '--configuration $(buildConfiguration) --no-restore'
+    modifyOutputPath: false
+  displayName: 'Publish Site'
 
 
 
