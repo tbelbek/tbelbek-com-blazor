@@ -27,7 +27,6 @@ steps:
   inputs:
     command: 'build'
     projects: '**/tbelbek.com*.csproj'
-    arguments: '--no-restore'
   displayName: 'Build projects'
   
 - task: DotNetCoreCLI@2
@@ -35,7 +34,7 @@ steps:
     command: 'publish'
     publishWebProjects: false
     projects: '**/tbelbek.com.csproj'
-    arguments: '--configuration $(buildConfiguration) --no-restore'
+    arguments: '--configuration $(buildConfiguration)'
     modifyOutputPath: false
   displayName: 'Publish Site'
 
