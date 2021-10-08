@@ -20,32 +20,36 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
-# - task: UseDotNet@2
-#   inputs:
-#     packageType: 'sdk'
-#     version: '5.0.x'
+- task: UseDotNet@2
+  inputs:
+    version: '5.0.x'
+    includePreviewVersions: true # Required for preview versions
+
+- task: UseDotNet@2
+  inputs:
+    version: '3.0.x'
+    packageType: runtime
 
 - task: DotNetCoreCLI@2
-  displayName: 'NuGet restore'
   inputs:
     command: 'restore'
-    projects: '**/tbelbek.com.csproj'
-    verbosityRestore: 'Normal'
 
 - task: DotNetCoreCLI@2
-  displayName: 'Build'
   inputs:
-    zipAfterPublish: true
+    command: 'build'
+    arguments: '--configuration $(buildConfiguration)'
+  displayName: 'dotnet build $(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  inputs:
     command: publish
-    publishWebProjects: false
-    projects: '**/tbelbek.com.csproj'
-    arguments: '-c $(Build.Configuration) -o $(Build.ArtifactStagingDirectory)'
+    publishWebProjects: True
+    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: True
 
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish'
+# this code takes all the files in $(Build.ArtifactStagingDirectory) and uploads them as an artifact of your build.
+- task: PublishPipelineArtifact@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
-
+    targetPath: '$(Build.ArtifactStagingDirectory)' 
+    artifactName: 'tbelbekcom'
 
