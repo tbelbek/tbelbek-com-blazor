@@ -8,19 +8,19 @@
         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
         <ul id="nav" class="nav">
             <li class="current">
-                <a class="smoothscroll" href="#home">Home</a>
+                <a class="smoothscroll" href="#home">@L["Giris"]</a>
             </li>
             <li>
-                <a class="smoothscroll" href="#about">About</a>
+                <a class="smoothscroll" href="#about">@L["HakkimdaNav"]</a>
             </li>
             <li>
-                <a class="smoothscroll" href="#resume">Resume</a>
+                <a class="smoothscroll" href="#resume">@L["Gecmisim"]</a>
             </li>
             <li>
-                <a class="smoothscroll" href="#portfolio">Works</a>
+                <a class="smoothscroll" href="#portfolio">@L["Projelerim"]</a>
             </li>
             <li>
-                <a class="smoothscroll" href="#testimonials">About My Job</a>
+                <a class="smoothscroll" href="#testimonials">@L["Fikirler"]</a>
             </li>
             @* <li>
                 <a class="smoothscroll" href="#contact">Contact</a>
@@ -35,11 +35,9 @@
         <div class="banner-text">
             <h1 class="responsive-headline">I'm Tughan Belbek.</h1>
             <h2 style="color:darkgray;">
-                I'm a <span>software designer</span>, <span>illustrator</span> and <span>web designer</span> from
-                Istanbul/Turkey. Let's <a class="smoothscroll" href="#about" style="color:forestgreen;">start scrolling</a>
-                and learn more <a class="smoothscroll" href="#about" style="color:darkorange;">about me</a>,
+                @((MarkupString)L["Intro1"].Value)
                 <a href="~/Content/Tughan_Belbek_Resume.pdf" style="color:white;" download="@fileName">
-                    or you can download my CV from here.<em class="fa fa-angle-down bounce"></em>
+                    @L["DownloadCv"]<em class="fa fa-angle-down bounce"></em>
                 </a>
             </h2>
             <hr />

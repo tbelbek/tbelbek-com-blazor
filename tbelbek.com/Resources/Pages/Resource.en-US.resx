@@ -287,4 +287,32 @@
   <data name="PersonalWebpageTitle" xml:space="preserve">
     <value>Welcome to my personal page.</value>
   </data>
+  <data name="DownloadCv" xml:space="preserve">
+    <value>or you can download my CV from here.</value>
+  </data>
+  <data name="ShowMenu" xml:space="preserve">
+    <value>Show Menu</value>
+  </data>
+  <data name="HideMenu" xml:space="preserve">
+    <value>Hide Menu</value>
+  </data>
+  <data name="Intro1" xml:space="preserve">
+    <value>I'm a &lt;span&gt;software designer&lt;/span&gt;, &lt;span&gt;illustrator&lt;/span&gt; and &lt;span&gt;web designer&lt;/span&gt; from Istanbul/Turkey. Let's &lt;a class="smoothscroll" href="#about" style="color:forestgreen;"&gt;start scrolling&lt;/a&gt;
+and learn more &lt;a class="smoothscroll" href="#about" style="color:darkorange;"&gt;about me&lt;/a&gt;,</value>
+  </data>
+  <data name="Giris" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Gecmisim" xml:space="preserve">
+    <value>Resume</value>
+  </data>
+  <data name="HakkimdaNav" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Projelerim" xml:space="preserve">
+    <value>Works</value>
+  </data>
+  <data name="Fikirler" xml:space="preserve">
+    <value>About My Job</value>
+  </data>
 </root>

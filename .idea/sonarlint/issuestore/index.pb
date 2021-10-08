@@ -162,8 +162,6 @@ P
 F
 tbelbek.com/Program.cs,5\f\5f6b7c424e0426ea6af781ddde3d55c592a61c1a
 W
-'tbelbek.com/Resources/Resources.en.resx,0\2\023345f5d99bca01e4e8f41f552bf32d4e1e2eac
-W
 'tbelbek.com/Pages/ResumeComponent.razor,5\1\5168e9b0e1d86887453ea520890b86d57eda808a
 V
 &tbelbek.com/Pages/AboutComponent.razor,f\6\f6e75f0eff5a0d914f43bea5d63862451eb839fd
@@ -173,12 +171,6 @@ N
 ,tbelbek.com/Pages/TestimonialComponent.razor,f\0\f07ff4074284d0a8948ae7049719bef72abf4489
 T
 $tbelbek.com/Pages/IndexTurkish.razor,0\5\054852ba1239834cc60513b06d3a0eb949500729
-N
-tbelbek.com/Pages/_Host.cshtml,7\7\7774aa35801b6547b832ec4d3bf474c122be0702
-T
-$tbelbek.com/Pages/IndexEnglish.razor,e\f\ef93879915dd310241bda545b12ed3df7f586365
-Z
-*tbelbek.com/Pages/PortfolioComponent.razor,6\8\68fdfbe12aabc5f112a278e88ee9b0acb3d28da3
 F
 tbelbek.com/Startup.cs,8\1\813c7ac1492d6215786aba36a62d0412d3d496a8
 J
