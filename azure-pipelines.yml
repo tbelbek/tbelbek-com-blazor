@@ -26,9 +26,20 @@ steps:
     version: '5.0.x'
 
 - task: DotNetCoreCLI@2
-  displayName: 'dotnet build'
+  displayName: 'NuGet restore'
   inputs:
-    command: 'build'
+    command: 'restore'
+    projects: '**/tbelbek.com.csproj'
+    verbosityRestore: 'Normal'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Build'
+  inputs:
+    zipAfterPublish: true
+    command: publish
+    publishWebProjects: false
+    projects: '**/tbelbek.com.csproj'
+    arguments: '-c $(Build.Configuration) -o $(Build.ArtifactStagingDirectory) --no-restore'
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish'
@@ -36,7 +47,5 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-
-
 
 
