@@ -10,6 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Resources\NewFolder\**" />
+    <Content Remove="Resources\NewFolder\**" />
+    <EmbeddedResource Remove="Resources\NewFolder\**" />
+    <None Remove="Resources\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Localization" Version="5.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
   </ItemGroup>
@@ -28,10 +35,6 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Resources\NewFolder\" />
   </ItemGroup>
 
 </Project>
