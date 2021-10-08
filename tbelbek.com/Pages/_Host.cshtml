@@ -1,9 +1,12 @@
 ﻿@page "/"
 @namespace tbelbek.com.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Resource> L
 
 @{
     Layout = null;
+    System.Globalization.CultureInfo culture = System.Threading.Thread.CurrentThread.CurrentCulture;
+    string title = L["PersonalWebpageTitle"];
 }
 
 <!DOCTYPE html>
@@ -12,7 +15,7 @@
 
     <!--- Basic Page Needs
     ================================================== -->
-    <title>Tuğhan Belbek</title>
+    <title>@tit</title>
     <meta name="description" content="">
     <meta name="author" content="Tuğhan Belbek">
     <!-- Mobile Specific Metas
@@ -20,18 +23,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- CSS
     ================================================== -->
-    <link href="css/default.css" rel="stylesheet"/>
-    <link href="css/fonts.css" rel="stylesheet"/>
-    <link href="css/layout.css" rel="stylesheet"/>
-    <link href="css/media-queries.css" rel="stylesheet"/>
-    <link href="css/magnific-popup.css" rel="stylesheet"/>
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/layout.css" rel="stylesheet" />
+    <link href="css/media-queries.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
     <!-- Script
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="images/Image.jpg">
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @if (new List<int> { 11, 12, 1, 2 }.Contains(DateTime.Now.Month))
     {
@@ -39,13 +42,13 @@
     }
 </head>
 <body>
-<!-- Google Tag Manager -->
-<noscript>
-    <emframe title="ggl" src="//www.googletagmanager.com/ns.html?id=GTM-56CQ2S" height="0" width="0"
-             style="display: none; visibility: hidden">
-    </emframe>
-</noscript>
-<script>
+    <!-- Google Tag Manager -->
+    <noscript>
+        <emframe title="ggl" src="//www.googletagmanager.com/ns.html?id=GTM-56CQ2S" height="0" width="0"
+                 style="display: none; visibility: hidden">
+        </emframe>
+    </noscript>
+    <script>
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -62,75 +65,84 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-56CQ2S');
     </script>
+    @if (culture.Name.ToString() == "tr")
+    {
+        <component type="typeof(IndexTurkish)" render-mode="ServerPrerendered" />
+        System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("tr-TR");
+    }
+    else
+    {
+        <component type="typeof(IndexEnglish)" render-mode="ServerPrerendered" />
+        System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
+    }
+    <component type="typeof(AboutComponent)" render-mode="ServerPrerendered" />
+    <component type="typeof(ResumeComponent)" render-mode="ServerPrerendered" />
+    <component type="typeof(PortfolioComponent)" render-mode="ServerPrerendered" />
+    <component type="typeof(TestimonialComponent)" render-mode="ServerPrerendered" />
 
-@* <component type="typeof(IndexEnglish)" render-mode="ServerPrerendered"/> *@
-<component type="typeof(IndexTurkish)" render-mode="ServerPrerendered"/>
-<component type="typeof(AboutComponent)" render-mode="ServerPrerendered"/>
-<component type="typeof(ResumeComponent)" render-mode="ServerPrerendered"/>
-<component type="typeof(PortfolioComponent)" render-mode="ServerPrerendered"/>
-<component type="typeof(TestimonialComponent)" render-mode="ServerPrerendered"/>
-
-<footer>
-    <div class="row">
-        <div class="twelve columns">
-            <ul class="social-links">
-                <li>
-                    <a href="https://linkedin.com/in/tbelbek">
-                        <em class="fa fa-2x fa-linkedin"></em>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/tbelbek">
-                        <em class="fa fa-2x fa-instagram"></em>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/tbelbek/">
-                        <em class="fa fa-2x fa-github"></em>
-                    </a>
-                </li>
-                <li>
-                    <a href="skype:tughanbelbek?chat">
-                        <em class="fa fa-2x fa-skype"></em>
-                    </a>
-                </li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Copyright @DateTime.Now.Year T.Belbek</li>
-                <li>
-                    Design by <a title="T.Belbek" href="https://linkedin.com/in/tbelbek">TB</a>
-                </li>
-                <li>
-                    Powered by
-                    <a title="Go To Pipelines"
-                       href="https://azure.microsoft.com/tr-tr/services/devops/pipelines/">
-                        Azure Pipelines
-                    </a>
-                    &nbsp;&amp;&nbsp; <a title="Go To Github" href="https://github.com/">GitHub</a>
-                </li>
-            </ul>
+    <footer>
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="social-links">
+                    <li>
+                        <a href="https://linkedin.com/in/tbelbek">
+                            <em class="fa fa-2x fa-linkedin"></em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/tbelbek">
+                            <em class="fa fa-2x fa-instagram"></em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/tbelbek/">
+                            <em class="fa fa-2x fa-github"></em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="skype:tughanbelbek?chat">
+                            <em class="fa fa-2x fa-skype"></em>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Copyright @DateTime.Now.Year T.Belbek</li>
+                    <li>
+                        Design by <a title="T.Belbek" href="https://linkedin.com/in/tbelbek">TB</a>
+                    </li>
+                    <li>
+                        Powered by
+                        <a title="Go To Pipelines"
+                           href="https://azure.microsoft.com/tr-tr/services/devops/pipelines/">
+                            Azure Pipelines
+                        </a>
+                        &nbsp;&amp;&nbsp; <a title="Go To Github" href="https://github.com/">GitHub</a>
+                        &nbsp;&amp;&nbsp; <a title="Go To Blazor Page" href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor">Blazor</a>
+                    </li>
+                    <li>@culture.Name.ToString()</li>
+                </ul>
+            </div>
+            <div id="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#home">
+                    <em class="icon-up-open"></em>
+                </a>
+            </div>
         </div>
-        <div id="go-top">
-            <a class="smoothscroll" title="Back to Top" href="#home">
-                <em class="icon-up-open"></em>
-            </a>
-        </div>
-    </div>
-</footer> <!-- Footer End-->
+    </footer> <!-- Footer End-->
 
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/init.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/waypoints.js"></script>
-<script src="js/magnific-popup.js"></script>
-<script src="js/jquery.fittext.js"></script>
-<script src="_framework/blazor.server.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="_framework/blazor.server.js"></script>
 
-<script>
-var initPage = function (){
-    loadInit();
-};
-</script>
+    <script>
+        var initPage = function () {
+            loadInit();
+        };
+    </script>
 </body>
 </html>

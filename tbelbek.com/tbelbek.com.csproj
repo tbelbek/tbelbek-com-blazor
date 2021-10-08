@@ -15,10 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Resources\Pages\Resource.en.resx">
+    <EmbeddedResource Update="Resources\Pages\Resource.en-US.resx">
       <Generator></Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Pages\Resource.resx">
+    <EmbeddedResource Update="Resources\Pages\Resource.tr-TR.resx">
       <Generator></Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Resources.en.resx">

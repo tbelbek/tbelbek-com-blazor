@@ -11,7 +11,6 @@ using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Localization;
-using tbelbek.com.Data;
 
 namespace tbelbek.com
 {
@@ -32,14 +31,6 @@ namespace tbelbek.com
             services.AddServerSideBlazor();
 
             services.AddLocalization(options => options.ResourcesPath = "Resources");
-            var supportedCultures = new List<CultureInfo> { new CultureInfo("en-US"), new CultureInfo("tr") };
-            services.Configure<RequestLocalizationOptions>(options =>
-            {
-                options.DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture("en");
-                options.SupportedUICultures = supportedCultures;
-                options.SupportedUICultures = supportedCultures;
-            });
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,7 +50,13 @@ namespace tbelbek.com
             app.UseHttpsRedirection();
 
             // use the browser's preferred language for localization
-            app.UseRequestLocalization();
+            var supportedCultures = new[] { "en-US", "tr-TR" };
+            var localizationOptions = new RequestLocalizationOptions()
+                .SetDefaultCulture(supportedCultures[1])
+                .AddSupportedCultures(supportedCultures)
+                .AddSupportedUICultures(supportedCultures);
+
+            app.UseRequestLocalization(localizationOptions);
 
             app.UseStaticFiles();
 
