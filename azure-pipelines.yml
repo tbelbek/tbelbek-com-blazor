@@ -26,13 +26,12 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '**/tbelbek.com.csproj'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
-    publishWebProjects: false
-    projects: '**/tbelbek.com.csproj'
+    publishWebProjects: true
+    zipAfterPublish: true
 
 - task: PublishBuildArtifacts@1
   inputs:
