@@ -1,5 +1,5 @@
 ﻿@using tbelbek.com.Data
-@inject IStringLocalizer<ResumeComponent> L
+@inject IStringLocalizer<Resource> L
 <!-- Resume Section
 ================================================== -->
 <section id="resume">
@@ -8,7 +8,9 @@
     <div class="row work">
         <div class="three columns header-col">
             <h1>
-                <span>@L["Work"]</span>
+                <span>
+                    @L["Work"]
+                </span>
             </h1>
         </div>
         <div class="nine columns main-col">
@@ -17,8 +19,7 @@
                     <h3>KoçSistem</h3>
                     <p class="info">
                         Software Development Technology Manager<span>&bull;</span>
-                        <em
-                            class="date">
+                        <em class="date">
                             @L["Haziran 2021"] - @L["Now"]
                         </em>
                     </p>

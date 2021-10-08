@@ -30,16 +30,16 @@ namespace tbelbek.com
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<WeatherForecastService>();
 
-            services.AddLocalization(options => options.ResourcesPath = "Resources");  
-            var supportedCultures = new List<CultureInfo> { new CultureInfo("en"), new CultureInfo("tr") };  
-            services.Configure<RequestLocalizationOptions>(options =>  
-            {  
-                options.DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture("en");  
-                options.SupportedUICultures = supportedCultures;  
-            }); 
-            
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+            var supportedCultures = new List<CultureInfo> { new CultureInfo("en-US"), new CultureInfo("tr") };
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                options.DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture("en");
+                options.SupportedUICultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,9 +57,10 @@ namespace tbelbek.com
             }
 
             app.UseHttpsRedirection();
-            
-            app.UseRequestLocalization(); 
-            
+
+            // use the browser's preferred language for localization
+            app.UseRequestLocalization();
+
             app.UseStaticFiles();
 
             app.UseRouting();
