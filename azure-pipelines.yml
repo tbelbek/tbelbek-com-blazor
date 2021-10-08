@@ -39,7 +39,7 @@ steps:
     command: publish
     publishWebProjects: false
     projects: '**/tbelbek.com.csproj'
-    arguments: '-c $(Build.Configuration) -o $(Build.ArtifactStagingDirectory) --no-restore'
+    arguments: '-c $(Build.Configuration) -o $(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish'
