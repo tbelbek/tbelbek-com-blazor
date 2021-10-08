@@ -1,45 +1,43 @@
-﻿@page "/TR"
+﻿@page "/EN"
 @inject IStringLocalizer<Resource> L
 <!-- Header
 ================================================== -->
 <header id="home">
     <nav id="nav-wrap">
-        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Menüyü Göster</a>
-        <a class="mobile-btn" href="#" title="Hide navigation">Menüyü Gizle</a>
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
         <ul id="nav" class="nav">
             <li class="current">
-                <a class="smoothscroll" href="#home">Gİrİş</a>
+                <a class="smoothscroll" href="#home">@L["Giris"]</a>
             </li>
             <li>
-                <a class="smoothscroll" href="#about">Hakkımda</a>
+                <a class="smoothscroll" href="#about">@L["HakkimdaNav"]</a>
             </li>
             <li>
-                <a class="smoothscroll" href="#resume">Geçmİşİm</a>
+                <a class="smoothscroll" href="#resume">@L["Gecmisim"]</a>
             </li>
             <li>
-                <a class="smoothscroll" href="#portfolio">Projelerİm</a>
+                <a class="smoothscroll" href="#portfolio">@L["Projelerim"]</a>
             </li>
             <li>
-                <a class="smoothscroll" href="#testimonials">Fİkİrler</a>
+                <a class="smoothscroll" href="#testimonials">@L["Fikirler"]</a>
             </li>
-            @* <li><a class="smoothscroll" href="#contact">İletİŞİm</a></li> *@
-        </ul> <!-- end #nav -->
-    </nav> <!-- end #nav-wrap -->
+            @* <li>
+                <a class="smoothscroll" href="#contact">Contact</a>
+                </li> *@
+            @*<li><a class="lang" href="index.html"></a></li>
+                <li><a class="lang" href="indexen.html"></a></li>*@
+        </ul>
+        <!-- end #nav -->
+    </nav>
+    <!-- end #nav-wrap -->
     <div class="row banner">
         <div class="banner-text">
-            <h1 class="responsive-headline">Merhaba.</h1>
+            <h1 class="responsive-headline">@L["Merhaba"]</h1>
             <h2 style="color:darkgray;">
-                Ben Tuğhan Belbek, sizlere <span> yazılım tasarımı </span> veya <span>fizikçi</span>
-                olarak hizmet vermekten mutluluk duyacağım. Hakkımdaki detaylı bilgiler sayfanın
-                <a class="smoothscroll"
-                   href="#about" style="color:forestgreen;">
-                    aşağısında
-                </a>
-                bulunmaktadır.
-                <a href="~/Content/Tughan_Belbek_Resume.pdf"
-                   download="@fileName" style="color:white;">
-                    Ya da CV'mi hızlıca buradan
-                    indirebilirsiniz.<em class="fa fa-angle-down bounce"></em>
+                @((MarkupString)L["Intro1"].Value)
+                <a href="Tughan_Belbek_Resume.pdf" style="color:white;" download="@fileName">
+                    @L["DownloadCv"]<em class="fa fa-angle-down bounce"></em>
                 </a>
             </h2>
             <hr />
@@ -57,17 +55,17 @@
                 </li>
                 <li>
                     <a href="http://instagram.com/tbelbek">
-                        <em class="fa fa-2x fa-instagram"></em>
+                        <em class="fa  fa-2x fa-instagram"></em>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/tbelbek/">
-                        <em class="fa fa-2x fa-github"></em>
+                        <em class="fa fa-2x  fa-github"></em>
                     </a>
                 </li>
                 <li>
                     <a href="skype:tughanbelbek?chat">
-                        <em class="fa fa-2x fa-skype"></em>
+                        <em class="fa fa-2x  fa-skype"></em>
                     </a>
                 </li>
             </ul>
@@ -78,7 +76,8 @@
             <em class="icon-down-circle"></em>
         </a>
     </p>
-</header> <!-- Header End -->
+</header>
+<!-- Header End -->
 
 @code {
     string fileName = string.Concat("tbelbek_CV_", DateTime.Now.ToShortDateString(), ".pdf");
