@@ -275,7 +275,7 @@ namespace tbelbek.com.Helper
                 Language = LangImage.CSharp,
                 Line = 1
             });
-            
+
             list.Add(new PortfolioDetailModel()
             {
                 ProjectName = "Boyner GiftCard Automation",
@@ -284,7 +284,7 @@ namespace tbelbek.com.Helper
                 Language = LangImage.CSharp,
                 Line = 2
             });
-            
+
             list.Add(new PortfolioDetailModel()
             {
                 ProjectName = "Kordsa Global Octopus",
@@ -293,7 +293,7 @@ namespace tbelbek.com.Helper
                 Language = LangImage.CSharp,
                 Line = 3
             });
-            
+
             list.Add(new PortfolioDetailModel()
             {
                 ProjectName = "MedicalPark Reflex",
@@ -302,7 +302,7 @@ namespace tbelbek.com.Helper
                 Language = LangImage.CSharp,
                 Line = 4
             });
-            
+
             list.Add(new PortfolioDetailModel()
             {
                 ProjectName = "Modyo Signage App",
@@ -311,48 +311,48 @@ namespace tbelbek.com.Helper
                 Language = LangImage.CSharp,
                 Line = 5
             });
-            
+
             list.Add(new PortfolioDetailModel()
             {
                 ProjectName = "AraçPc 2.0 IETT - AkYolBil 2.0 IETT",
                 TechDetail = "C++, Qt Framework, Embedded Programming, C#, MVC. ASP.Net, Web API",
-                ModalDetail = Localizer["Modal6"],
+                ModalDetail = $"{Localizer["Modal6"]} - {Localizer["Modal7"]}",
                 Language = LangImage.CPlusPlus,
                 Line = 6
             });
-            
+
             list.Add(new PortfolioDetailModel()
             {
                 ProjectName = "Arçelik",
                 TechDetail = "C#,.net Core, Winforms, Webforms",
-                ModalDetail = Localizer["Modal7"],
+                ModalDetail = Localizer["Modal8"],
                 Language = LangImage.CSharp,
                 Line = 7
             });
-            
+
             list.Add(new PortfolioDetailModel()
             {
                 ProjectName = "Bosch Siemens Hausgerate",
                 TechDetail = "C#,.net Core, React.js",
-                ModalDetail = Localizer["Modal8"],
+                ModalDetail = Localizer["Modal9"],
                 Language = LangImage.CSharp,
                 Line = 8
             });
-            
+
             list.Add(new PortfolioDetailModel()
             {
                 ProjectName = "Aygaz",
                 TechDetail = "C#,.net Core, React.js",
-                ModalDetail = Localizer["Modal9"],
+                ModalDetail = Localizer["Modal10"],
                 Language = LangImage.CSharp,
                 Line = 9
             });
-            
+
             list.Add(new PortfolioDetailModel()
             {
                 ProjectName = "Ford",
                 TechDetail = "C#, WebForms, Oracle",
-                ModalDetail = Localizer["Modal10"],
+                ModalDetail = Localizer["Modal11"],
                 Language = LangImage.CSharp,
                 Line = 10
             });
