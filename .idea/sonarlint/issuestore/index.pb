@@ -133,12 +133,8 @@ Q
 !tbelbek.com/wwwroot/js/theme2.css,a\d\ade6a541f15913920e2e4a5be1b7d810490a390b
 S
 #tbelbek.com/wwwroot/html/index.html,f\2\f2c0f93f3efc84366b0d6585f8f53ebd3d8ca9b6
-R
-"tbelbek.com/wwwroot/css/layout.css,8\1\819000818ce5fdfdfb65bf54c5099e7cc9ef07dc
 U
 %tbelbek.com/wwwroot/inc/sendEmail.php,a\e\aeed2be927f5f5b8ad8515bd94a3e33a95d95a8c
-S
-#tbelbek.com/wwwroot/css/default.css,7\b\7b4deb329e33296858db0012d5ec6519b2aa15ed
 Y
 )tbelbek.com/wwwroot/css/media-queries.css,b\1\b10f0e81b3ee030edb71e0764f3506c17d1d180f
 Q
@@ -153,16 +149,8 @@ u
 Etbelbek.com/wwwroot/css/fonts/opensans/OpenSans-ExtraBold-webfont.svg,2\a\2ac4cf9603d3121473b7ee4fe19f5c8799db9d4c
 {
 Ktbelbek.com/wwwroot/css/fonts/opensans/OpenSans-ExtraBoldItalic-webfont.svg,a\0\a0c0cd4389bcb5711fb74032ec98eb6a270bce97
-L
-tbelbek.com/wwwroot/Site.css,2\e\2eb2afe1937aec7ad510e66cc4ba79765390f636
-P
- tbelbek.com/wwwroot/css/site.css,1\b\1b1577e5f665bbe22de96b89f2e8d4afc0185d0c
 [
 +tbelbek.com/wwwroot/js/jquery-1.10.2.min.js,c\e\cea42d761674f33fa004bed49169d13d38720d89
-F
-tbelbek.com/Program.cs,5\f\5f6b7c424e0426ea6af781ddde3d55c592a61c1a
-W
-'tbelbek.com/Pages/ResumeComponent.razor,5\1\5168e9b0e1d86887453ea520890b86d57eda808a
 V
 &tbelbek.com/Pages/AboutComponent.razor,f\6\f6e75f0eff5a0d914f43bea5d63862451eb839fd
 N
