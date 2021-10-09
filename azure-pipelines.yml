@@ -20,6 +20,17 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+- task: SonarQubePrepare@4
+  inputs:
+    SonarQube: 'Sonarqube'
+    scannerMode: 'MSBuild'
+    projectKey: 'tbelbek-com-blazor'
+    projectName: 'tbelbek-com-blazor'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+      sonar.exclusions=tbelbek.com/wwwroot/**
+
 - task: UseDotNet@2
   inputs:
     version: '5.0.x'
@@ -39,6 +50,8 @@ steps:
     command: 'build'
     arguments: '--configuration $(buildConfiguration)'
   displayName: 'dotnet build $(buildConfiguration)'
+
+- task: SonarQubeAnalyze@4
 
 - task: DotNetCoreCLI@2
   inputs:
