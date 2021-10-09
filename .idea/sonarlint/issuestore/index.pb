@@ -1,6 +1,4 @@
 
-N
-tbelbek.com/Pages/Error.cshtml,e\5\e51b75a50117234360ab512624a9cd61087fa57b
 r
 Btbelbek.com/wwwroot/css/fonts/opensans/OpenSans-Italic-webfont.svg,b\3\b3001630f3e94dc1fc09bf7fbde581786f052081
 q
@@ -155,8 +153,6 @@ V
 &tbelbek.com/Pages/AboutComponent.razor,f\6\f6e75f0eff5a0d914f43bea5d63862451eb839fd
 N
 tbelbek.com/wwwroot/js/init.js,3\d\3d60916eea7c282b72269fc44935df01c6b88184
-\
-,tbelbek.com/Pages/TestimonialComponent.razor,f\0\f07ff4074284d0a8948ae7049719bef72abf4489
 J
 tbelbek.com/_Imports.razor,0\d\0d1d16d76ff3a771f3ad14a4b74d9a636b3950a3
 E
