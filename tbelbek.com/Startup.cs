@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Localization;
+using tbelbek.com.Helper;
+using tbelbek.com.Pages;
 
 namespace tbelbek.com
 {
@@ -21,8 +24,10 @@ namespace tbelbek.com
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-
+            
             services.AddLocalization(options => options.ResourcesPath = "Resources");
+            services.AddSingleton<IStringLocalizer, StringLocalizer<Resource>>();
+            services.AddScoped<IDataStore, DataStore>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

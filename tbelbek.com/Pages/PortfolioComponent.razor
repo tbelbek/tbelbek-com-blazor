@@ -1,304 +1,69 @@
-﻿@inject IStringLocalizer<Resource> L
+﻿@using tbelbek.com.Helper
+@using tbelbek.com.Model
+@inject IStringLocalizer<Resource> L
+@inject IDataStore dataStore;
 <!-- Portfolio Section
 ================================================== -->
 <section id="portfolio">
-<div class="row">
-<div class="twelve columns collapsed">
-    <h1>@L["ConsultedCompanies"]</h1>
+    <div class="row">
+        <div class="twelve columns collapsed">
+            <h1>@L["ConsultedCompanies"]</h1>
 
-    <!-- portfolio-wrapper -->
-    <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-        <div class="columns portfolio-item">
-            <div class="item-wrap">
-                <a class="proj-modal" href="#modal-01" title="">
-                    <img class="company-logo" src="images/borusanotomotiv-logo-facebook.jpg" alt=""/>
-                    <div class="overlay">
-                        <div class="portfolio-item-meta">
-                            <h5>Borusan Otomotiv</h5>
-                            <p>Web app with MVC</p>
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+                @foreach (PortfolioHeaderModel pfHeader in portfolioHeaderData)
+                {
+                    <div class="columns portfolio-item">
+                        <div class="item-wrap">
+                            <a class="proj-modal" href="#modal-01" title="">
+                                <img class="company-logo" src="@pfHeader.Image" alt=""/>
+                                <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>@pfHeader.Company</h5>
+                                        <p>@pfHeader.Explanation</p>
+                                    </div>
+                                </div>
+                                <div class="link-icon">
+                                    <em class="icon-plus"></em>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="link-icon">
-                        <em class="icon-plus"></em>
-                    </div>
-                </a>
+                }
+                <!-- item end -->
+            </div> <!-- portfolio-wrapper end -->
+        </div> <!-- twelve columns end -->
+        <!-- Modal Popup
+        --------------------------------------------------------------- -->
+        @foreach (PortfolioDetailModel pfDetail in portfolioDetailData)
+        {
+            <div id="modal-01" class="popup-modal mfp-hide">
+                <img class="scale-with-grid" src="@pfDetail.LanguageLogo" alt=""/>
+                <div class="description-box">
+                    <h4>@pfDetail.ProjectName</h4>
+                    <p>@pfDetail.ModalDetail</p>
+                    <span class="categories">
+                        <em class="fa fa-tag"></em>@pfDetail.TechDetail
+                    </span>
+                </div>
+                <div class="link-box">
+                    <a class="popup-modal-dismiss">@L["Close"]</a>
+                </div>
             </div>
-        </div>
-        <div class="columns portfolio-item">
-            <div class="item-wrap">
-                <a class="proj-modal" href="#modal-02" title="">
-                    <img class="company-logo" src="images/boyner.jpg" alt=""/>
-                    <div class="overlay">
-                        <div class="portfolio-item-meta">
-                            <h5>Boyner</h5>
-                            <p>Web app with MVC</p>
-                        </div>
-                    </div>
-                    <div class="link-icon">
-                        <em class="icon-plus"></em>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="columns portfolio-item">
-            <div class="item-wrap">
-                <a class="proj-modal" href="#modal-03" title="">
-                    <img class="company-logo" src="images/kordsa.png" alt=""/>
-                    <div class="overlay">
-                        <div class="portfolio-item-meta">
-                            <h5>Kordsa</h5>
-                            <p>Web app with MVC</p>
-                        </div>
-                    </div>
-                    <div class="link-icon">
-                        <em class="icon-plus"></em>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="columns portfolio-item">
-            <div class="item-wrap">
-                <a class="proj-modal" href="#modal-04" title="">
-                    <img class="company-logo" src="images/mlp.png"  alt=""/>
-                    <div class="overlay">
-                        <div class="portfolio-item-meta">
-                            <h5>MedicalPark</h5>
-                            <p>Web app with MVC</p>
-                        </div>
-                    </div>
-                    <div class="link-icon">
-                        <em class="icon-plus"></em>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="columns portfolio-item">
-            <div class="item-wrap">
-                <a class="proj-modal" href="#modal-05" title="">
-                    <img class="company-logo" src="images/modyo_logo_v-copy.jpg" alt=""/>
-                    <div class="overlay">
-                        <div class="portfolio-item-meta">
-                            <h5>Modyo Signage</h5>
-                            <p>Web app with MVC, Android, Api support</p>
-                        </div>
-                    </div>
-                    <div class="link-icon">
-                        <em class="icon-plus"></em>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="columns portfolio-item">
-            <div class="item-wrap">
-                <a class="proj-modal" href="#modal-07" title="">
-                    <img class="company-logo" src="images/iett.jpg" alt=""/>
-                    <div class="overlay">
-                        <div class="portfolio-item-meta">
-                            <h5>IETT</h5>
-                            <p>Qt C++ app, Embedded</p>
-                        </div>
-                    </div>
-                    <div class="link-icon">
-                        <em class="icon-plus"></em>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="columns portfolio-item">
-            <div class="item-wrap">
-                <a class="proj-modal" href="#modal-08" title="">
-                    <img class="company-logo" src="images/ICRON-customer-logo-Arcelik-1.png" alt=""/>
-                    <div class="overlay">
-                        <div class="portfolio-item-meta">
-                            <h5>Arçelik</h5>
-                            <p>C#, VB, Webforms, Winforms, .Net Core</p>
-                        </div>
-                    </div>
-                    <div class="link-icon">
-                        <em class="icon-plus"></em>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="columns portfolio-item">
-            <div class="item-wrap">
-                <a class="proj-modal" href="#modal-09" title="">
-                    <img class="company-logo" src="images/bsh.png" alt=""/>
-                    <div class="overlay">
-                        <div class="portfolio-item-meta">
-                            <h5>Bosch Siemens Hausgerate</h5>
-                            <p>C#, .Net Core</p>
-                        </div>
-                    </div>
-                    <div class="link-icon">
-                        <em class="icon-plus"></em>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="columns portfolio-item">
-            <div class="item-wrap">
-                <a class="proj-modal" href="#modal-10" title="">
-                    <img class="company-logo" src="images/aygaz.png" alt=""/>
-                    <div class="overlay">
-                        <div class="portfolio-item-meta">
-                            <h5>Aygaz</h5>
-                            <p>C#, .Net Core</p>
-                        </div>
-                    </div>
-                    <div class="link-icon">
-                        <em class="icon-plus"></em>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="columns portfolio-item">
-            <div class="item-wrap">
-                <a class="proj-modal" href="#modal-11" title="">
-                    <img class="company-logo" src="images/ford.jpg" alt=""/>
-                    <div class="overlay">
-                        <div class="portfolio-item-meta">
-                            <h5>Ford</h5>
-                            <p>C#, MVC, WebForms</p>
-                        </div>
-                    </div>
-                    <div class="link-icon">
-                        <em class="icon-plus"></em>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <!-- item end -->
-        <!-- item end -->
-    </div> <!-- portfolio-wrapper end -->
-</div> <!-- twelve columns end -->
-<!-- Modal Popup
---------------------------------------------------------------- -->
-<div id="modal-01" class="popup-modal mfp-hide">
-    <img class="scale-with-grid" src="images/portfolio/csharp.png" alt=""/>
-    <div class="description-box">
-        <h4>Borusan Otomotiv UG</h4>
-        <p>@L["Modal1"]</p>
-        <span class="categories"><em class="fa fa-tag"></em>C#, MVC. asp.Net</span>
-    </div>
-    <div class="link-box">
-        <a class="popup-modal-dismiss">@L["Close"]</a>
-    </div>
-</div>
-<div id="modal-02" class="popup-modal mfp-hide">
-    <img class="scale-with-grid" src="images/portfolio/csharp.png" alt=""/>
-    <div class="description-box">
-        <h4>Boyner GiftCard automation</h4>
-        <p>@L["Modal2"]</p>
-
-        <span class="categories"><em class="fa fa-tag"></em>C#, MVC. asp.Net</span>
-    </div>
-    <div class="link-box">
-        <a class="popup-modal-dismiss">@L["Close"]</a>
-    </div>
-</div>
-<div id="modal-03" class="popup-modal mfp-hide">
-    <img class="scale-with-grid" src="images/portfolio/csharp.png" alt=""/>
-    <div class="description-box">
-        <h4>Kordsa Global Octopus</h4>
-        <p>@L["Modal3"]</p>
-        <span class="categories"><em class="fa fa-tag"></em>C#, MVC. asp.Net</span>
-    </div>
-    <div class="link-box">
-        <a class="popup-modal-dismiss">@L["Close"]</a>
-    </div>
-</div>
-<div id="modal-04" class="popup-modal mfp-hide">
-    <img class="scale-with-grid" src="images/portfolio/csharp.png" alt=""/>
-    <div class="description-box">
-        <h4>MedicalPark Reflex</h4>
-        <p>@L["Modal4"]</p>
-
-        <span class="categories"><em class="fa fa-tag"></em>C#, MVC. asp.Net</span>
-    </div>
-    <div class="link-box">
-        <a class="popup-modal-dismiss">@L["Close"]</a>
-    </div>
-</div>
-<div id="modal-05" class="popup-modal mfp-hide">
-    <img class="scale-with-grid" src="images/portfolio/csharp.png" alt=""/>
-    <div class="description-box">
-        <h4>Modyo Signage App</h4>
-        <p>@L["Modal5"]</p>
-        <span class="categories"><em class="fa fa-tag"></em>C#, MVC, asp.Net</span>
-    </div>
-    <div class="link-box">
-        <a class="popup-modal-dismiss">@L["Close"]</a>
-    </div>
-</div>
-<div id="modal-06" class="popup-modal mfp-hide">
-    <img class="scale-with-grid" src="images/portfolio/csharp.png" alt=""/>
-    <div class="description-box">
-        <h4>AkYolBil 2.0 IETT</h4>
-        <p>@L["Modal6"]</p>
-
-        <span class="categories"><em class="fa fa-tag"></em>C#, MVC. asp.Net</span>
-    </div>
-    <div class="link-box">
-        <a class="popup-modal-dismiss">@L["Close"]</a>
-    </div>
-</div>
-<div id="modal-07" class="popup-modal mfp-hide">
-    <img class="scale-with-grid" src="images/portfolio/cpp_logo.png" alt=""/>
-    <div class="description-box">
-        <h4>AraçPc 2.0 IETT</h4>
-        <p>@L["Modal7"]</p>
-        <span class="categories"><em class="fa fa-tag"></em>C++, Qt Framework, Embedded</span>
-    </div>
-    <div class="link-box">
-        <a class="popup-modal-dismiss">@L["Close"]</a>
-    </div>
-</div>
-<div id="modal-08" class="popup-modal mfp-hide">
-    <img class="scale-with-grid" src="images/portfolio/csharp.png" alt=""/>
-    <div class="description-box">
-        <h4>Arçelik</h4>
-        <p>@L["Modal8"]</p>
-        <span class="categories"><em class="fa fa-tag"></em>C#,.net Core, Winforms, Webforms</span>
-    </div>
-    <div class="link-box">
-        <a class="popup-modal-dismiss">@L["Close"]</a>
-    </div>
-</div>
-<div id="modal-09" class="popup-modal mfp-hide">
-    <img class="scale-with-grid" src="images/portfolio/csharp.png" alt=""/>
-    <div class="description-box">
-        <h4>Bosch Siemens Hausgerate</h4>
-        <p>@L["Modal9"]</p>
-
-        <span class="categories"><em class="fa fa-tag"></em>C#,.net Core, React.js</span>
-    </div>
-    <div class="link-box">
-        <a class="popup-modal-dismiss">@L["Close"]</a>
-    </div>
-</div>
-<div id="modal-10" class="popup-modal mfp-hide">
-    <img class="scale-with-grid" src="images/portfolio/csharp.png" alt=""/>
-    <div class="description-box">
-        <h4>Aygaz</h4>
-        <p>@L["Modal10"]</p>
-        <span class="categories"><em class="fa fa-tag"></em>C#,.net Core, React.js</span>
-    </div>
-    <div class="link-box">
-        <a class="popup-modal-dismiss">@L["Close"]</a>
-    </div>
-</div>
-<div id="modal-11" class="popup-modal mfp-hide">
-    <img class="scale-with-grid" src="images/portfolio/csharp.png" alt=""/>
-    <div class="description-box">
-        <h4>Ford</h4>
-        <p>@L["Modal11"]</p>
-        <span class="categories"><em class="fa fa-tag"></em>C#,WebForms,Oracle</span>
-    </div>
-    <div class="link-box">
-        <a class="popup-modal-dismiss">@L["Close"]</a>
-    </div>
-</div>
-
-</div> <!-- row End -->
+        }
+    </div> <!-- row End -->
 </section> <!-- Portfolio Section End-->
+
+@code{
+    private List<PortfolioHeaderModel> portfolioHeaderData;
+    private List<PortfolioDetailModel> portfolioDetailData;
+
+    protected override void OnInitialized()
+    {
+        portfolioHeaderData = dataStore.GetPortfolioHeaderInfo();
+        portfolioDetailData = dataStore.GetPortfolioDetailInfo();
+
+        base.OnInitialized();
+    }
+
+}

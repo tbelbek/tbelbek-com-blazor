@@ -1,4 +1,7 @@
-﻿@inject IStringLocalizer<Resource> L
+﻿@using tbelbek.com.Helper
+@using tbelbek.com.Model
+@inject IStringLocalizer<Resource> L;
+@inject IDataStore dataStore;
 <!-- Resume Section
 ================================================== -->
 <section id="resume">
@@ -13,66 +16,20 @@
             </h1>
         </div>
         <div class="nine columns main-col">
-            <div class="row item">
-                <div class="twelve columns">
-                    <h3>KoçSistem</h3>
-                    <p class="info">
-                        Software Development Technology Manager<span>&bull;</span>
-                        <em class="date">
-                            @L["Temmuz"] 2021 - @L["Now"]
-                        </em>
-                    </p>
+            @foreach (var work in workData)
+            {
+                <div class="row item">
+                    <div class="twelve columns">
+                        <h3>@work.Company</h3>
+                        <p class="info">
+                            @work.Title<span>&bull;</span>
+                            <em class="date">
+                                @work.Date
+                            </em>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="row item">
-                <div class="twelve columns">
-                    <h3>KoçSistem</h3>
-                    <p class="info">
-                        Software Development Lead<span>&bull;</span>
-                        <em class="date">
-                            @L["Mart"] 2020 -
-                            @L["Haziran"] 2021
-                        </em>
-                    </p>
-                </div>
-            </div>
-            <div class="row item">
-                <div class="twelve columns">
-                    <h3>KoçSistem</h3>
-                    <p class="info">
-                        Software Developer<span>&bull;</span>
-                        <em class="date">
-                            @L["Mart"] 2018 -
-                            @L["Mart"] 2020
-                        </em>
-                    </p>
-                </div>
-            </div>
-            <div class="row item">
-                <div class="twelve columns">
-                    <h3>Antasya Software</h3>
-                    <p class="info">
-                        Software Specialist <span>&bull;</span>
-                        <em class="date">
-                            @L["Aralik"] 2016 -
-                            @L["Mart"] 2018
-                        </em>
-                    </p>
-                </div>
-            </div>
-            <div class="row item">
-                <div class="twelve columns">
-                    <h3>BilgeAdam</h3>
-                    <p class="info">
-                        Software Consultancy <span>&bull;</span>
-                        <em class="date">
-                            @L["Agustos"] 2014 -
-                            @L["Aralik"] 2016
-                        </em>
-                    </p>
-
-                </div>
-            </div> <!-- item end -->
+            }
         </div> <!-- main-col end -->
     </div> <!-- End Work -->
     <!-- Education
@@ -84,45 +41,17 @@
             </h1>
         </div>
         <div class="nine columns main-col">
-            <!--<div class="row item">
-            <div class="twelve columns">
-            <img src="~/Content/images/spclst.png" style="width: 200px;" alt="">-->
-            <!--                   <div id="mcplogo" style="float:left;"></div> -->
-            <!--<div id="mcpmetin" style="float: left;">
-                <p class="info">HTML, CSS3, JavaScript, jQuery<span>&bull;</span> <em class="date">@L["Nisan"] 2015</em></p>
-                <p>
-                    @L["Education1"]
-                </p>
-            </div>
-            </div>
-            </div>-->
-            <!-- item end -->
-            <!--<div class="row item">
-                <div class="twelve columns">
-                    <h3>NBUY Programı - BilgeAdam</h3>
-                    <p class="info">@L["EducationTag1"] <span>&bull;</span> <em class="date">@L["Haziran"] 2014</em></p>
-                    <p>
-                        @L["Education2"]
-                    </p>
-                </div>
-            </div>-->
-            <!-- item end -->
-            <div class="row item">
-                <div class="twelve columns">
-                    <h3>Beykent Üniversitesi</h3>
-                    <p class="info">
-                        @L["EducationTag4"] <span>&bull;</span> <em class="date">@L["Haziran"] 2017</em>
-                    </p>
-                </div>
-            </div> <!-- item end -->
-            <div class="row item">
-                <div class="twelve columns">
-                    <h3>Marmara Üniversitesi</h3>
-                    <p class="info">
-                        @L["EducationTag2"] <span>&bull;</span> <em class="date">@L["Haziran"] 2014</em>
-                    </p>
-                </div>
-            </div> <!-- item end -->
+            @foreach (EduInfoModel edu in eduData)
+            {
+                <div class="row item">
+                    <div class="twelve columns">
+                        <h3>@edu.School</h3>
+                        <p class="info">
+                            @edu.Tag <span>&bull;</span> <em class="date">@edu.Date</em>
+                        </p>
+                    </div>
+                </div> <!-- item end -->
+            }
         </div> <!-- main-col end -->
     </div> <!-- End Education -->
     <!-- Skills
@@ -139,48 +68,29 @@
             </p>
             <div class="bars">
                 <ul class="skills">
-                    <li>
-                        <span class="bar-expand aspnet"></span><em>ASP.NET</em>
-                    </li>
-                    <li>
-                        <span class="bar-expand netcore"></span><em>.Net Core</em>
-                    </li>
-                    <li>
-                        <span class="bar-expand csharp"></span><em>C#</em>
-                    </li>
-                    <li>
-                        <span class="bar-expand cpp"></span><em>C++</em>
-                    </li>
-                    <li>
-                        <span class="bar-expand mssql"></span><em>MS SQL</em>
-                    </li>
-                    <li>
-                        <span class="bar-expand mvc"></span><em>MVC</em>
-                    </li>
-                    <li>
-                        <span class="bar-expand winapps"></span><em>Windows Apps</em>
-                    </li>
-                    <li>
-                        <span class="bar-expand linux"></span><em>Linux</em>
-                    </li>
-                    <li>
-                        <span class="bar-expand devops"></span><em>DevSecOps</em>
-                    </li>
-                    <li>
-                        <span class="bar-expand azure"></span><em>Azure</em>
-                    </li>
-                    <li>
-                        <span class="bar-expand linux"></span><em>AGILE/SCRUM</em>
-                    </li>
-                    <li>
-                        <span class="bar-expand no-sql"></span>
-                        <em>
-                            Queue structures, No-Sql databases, ORM Tools,
-                            ETC.
-                        </em>
-                    </li>
+                    @foreach (SkillInfoModel skill in skillInfo)
+                    {
+                        <li>
+                            <span class="bar-expand @skill.Class"></span><em>@skill.Skill</em>
+                        </li>
+                    }
                 </ul>
             </div><!-- end skill-bars -->
         </div> <!-- main-col end -->
     </div> <!-- End skills -->
 </section> <!-- Resume Section End-->
+
+@code{
+    private List<WorkInfoModel> workData;
+    private List<EduInfoModel> eduData;
+    private List<SkillInfoModel> skillInfo;
+    protected override void OnInitialized()
+    {
+        workData = dataStore.GetWorkInfo();
+        eduData = dataStore.GetEduInfo();
+        skillInfo = dataStore.GetSkillInfo();
+
+        base.OnInitialized();
+    }
+
+}
