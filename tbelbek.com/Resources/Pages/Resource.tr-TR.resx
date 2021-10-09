@@ -317,4 +317,7 @@
   <data name="Merhaba" xml:space="preserve">
     <value>Merhaba.</value>
   </data>
+  <data name="Temmuz" xml:space="preserve">
+    <value>Temmuz</value>
+  </data>
 </root>

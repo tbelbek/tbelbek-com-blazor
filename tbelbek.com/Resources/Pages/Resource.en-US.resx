@@ -318,4 +318,7 @@ and learn more &lt;a class="smoothscroll" href="#about" style="color:darkorange;
   <data name="Merhaba" xml:space="preserve">
     <value>I'm Tughan Belbek.</value>
   </data>
+  <data name="Temmuz" xml:space="preserve">
+    <value>July</value>
+  </data>
 </root>
