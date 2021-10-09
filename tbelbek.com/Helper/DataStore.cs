@@ -22,7 +22,7 @@ namespace tbelbek.com.Helper
             list.Add(new WorkInfoModel()
             {
                 Company = "KoçSistem",
-                Title = "Software Development Technology Manager",
+                Title = Localizer["SoftwareDevelopmentTechnologyManager"],
                 Date = $"{Localizer["Temmuz"]} 2021 - {Localizer["Now"]}",
                 Line = 5
             });
@@ -30,7 +30,7 @@ namespace tbelbek.com.Helper
             list.Add(new WorkInfoModel()
             {
                 Company = "KoçSistem",
-                Title = "Software Development Lead",
+                Title = Localizer["SoftwareDevelopmentLead"],
                 Date = $"{Localizer["Mart"]} 2020 - {Localizer["Haziran"]} 2021",
                 Line = 4
             });
@@ -38,7 +38,7 @@ namespace tbelbek.com.Helper
             list.Add(new WorkInfoModel()
             {
                 Company = "KoçSistem",
-                Title = "Software Development Consultant",
+                Title = Localizer["SeniorSoftwareDeveloper"],
                 Date = $"{Localizer["Mart"]} 2018 - {Localizer["Mart"]} 2020",
                 Line = 3
             });
@@ -46,7 +46,7 @@ namespace tbelbek.com.Helper
             list.Add(new WorkInfoModel()
             {
                 Company = "Antasya Software",
-                Title = "Software Specialist",
+                Title =Localizer["SoftwareSpecialist"] ,
                 Date = $"{Localizer["Aralik"]} 2016 - {Localizer["Mart"]} 2018",
                 Line = 2
             });
@@ -54,7 +54,7 @@ namespace tbelbek.com.Helper
             list.Add(new WorkInfoModel()
             {
                 Company = "BilgeAdam",
-                Title = "Software Consultant",
+                Title = Localizer["SoftwareConsultant"],
                 Date = $"{Localizer["Agustos"]} 2014 - {Localizer["Aralik"]} 2016",
                 Line = 1
             });
@@ -68,7 +68,7 @@ namespace tbelbek.com.Helper
 
             list.Add(new EduInfoModel()
             {
-                School = "Beykent University",
+                School = $"Beykent {Localizer["University"]}",
                 Tag = Localizer["EducationTag4"],
                 Date = $"{Localizer["Haziran"]} 2017",
                 Line = 2
@@ -76,7 +76,7 @@ namespace tbelbek.com.Helper
 
             list.Add(new EduInfoModel()
             {
-                School = "Marmara University",
+                School = $"Marmara {Localizer["University"]}",
                 Tag = Localizer["EducationTag2"],
                 Date = $"{Localizer["Haziran"]} 2014",
                 Line = 1

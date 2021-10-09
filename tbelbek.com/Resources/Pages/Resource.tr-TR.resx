@@ -320,4 +320,19 @@
   <data name="Temmuz" xml:space="preserve">
     <value>Temmuz</value>
   </data>
+  <data name="University" xml:space="preserve">
+    <value>Üniversitesi</value>
+  </data>
+  <data name="SoftwareConsultant" xml:space="preserve">
+    <value>Yazılım Danışmanı</value>
+  </data>
+  <data name="SeniorSoftwareDeveloper" xml:space="preserve">
+    <value>Kıdemli Yazılım Geliştirme Uzmanı</value>
+  </data>
+  <data name="SoftwareDevelopmentLead" xml:space="preserve">
+    <value>Yazılım Geliştirme Lideri</value>
+  </data>
+  <data name="SoftwareDevelopmentTechologyManager" xml:space="preserve">
+    <value>Yazılım Geliştirme Teknoloji Yöneticisi</value>
+  </data>
 </root>

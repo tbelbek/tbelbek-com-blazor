@@ -321,4 +321,19 @@ and learn more &lt;a class="smoothscroll" href="#about" style="color:darkorange;
   <data name="Temmuz" xml:space="preserve">
     <value>July</value>
   </data>
+  <data name="University" xml:space="preserve">
+    <value>University</value>
+  </data>
+  <data name="SoftwareConsultant" xml:space="preserve">
+    <value>Software Consultant</value>
+  </data>
+  <data name="SeniorSoftwareDeveloper" xml:space="preserve">
+    <value>Senior Software Developer</value>
+  </data>
+  <data name="SoftwareDevelopmentLead" xml:space="preserve">
+    <value>Software Development Lead</value>
+  </data>
+  <data name="SoftwareDevelopmentTechnologyManager" xml:space="preserve">
+    <value>Software Development Techology Manager</value>
+  </data>
 </root>
