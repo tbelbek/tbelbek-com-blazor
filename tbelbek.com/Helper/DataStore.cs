@@ -314,26 +314,26 @@ namespace tbelbek.com.Helper
             
             list.Add(new PortfolioDetailModel()
             {
-                ProjectName = "AkYolBil 2.0 IETT",
-                TechDetail = "C#, MVC. ASP.Net, Web API",
+                ProjectName = "AraçPc 2.0 IETT - AkYolBil 2.0 IETT",
+                TechDetail = "C++, Qt Framework, Embedded Programming, C#, MVC. ASP.Net, Web API",
                 ModalDetail = Localizer["Modal6"],
-                Language = LangImage.CSharp,
-                Line = 6
-            });
-            
-            list.Add(new PortfolioDetailModel()
-            {
-                ProjectName = "AraçPc 2.0 IETT",
-                TechDetail = "C++, Qt Framework, Embedded",
-                ModalDetail = Localizer["Modal7"],
                 Language = LangImage.CPlusPlus,
-                Line = 7
+                Line = 6
             });
             
             list.Add(new PortfolioDetailModel()
             {
                 ProjectName = "Arçelik",
                 TechDetail = "C#,.net Core, Winforms, Webforms",
+                ModalDetail = Localizer["Modal7"],
+                Language = LangImage.CSharp,
+                Line = 7
+            });
+            
+            list.Add(new PortfolioDetailModel()
+            {
+                ProjectName = "Bosch Siemens Hausgerate",
+                TechDetail = "C#,.net Core, React.js",
                 ModalDetail = Localizer["Modal8"],
                 Language = LangImage.CSharp,
                 Line = 8
@@ -341,7 +341,7 @@ namespace tbelbek.com.Helper
             
             list.Add(new PortfolioDetailModel()
             {
-                ProjectName = "Bosch Siemens Hausgerate",
+                ProjectName = "Aygaz",
                 TechDetail = "C#,.net Core, React.js",
                 ModalDetail = Localizer["Modal9"],
                 Language = LangImage.CSharp,
@@ -350,20 +350,11 @@ namespace tbelbek.com.Helper
             
             list.Add(new PortfolioDetailModel()
             {
-                ProjectName = "Aygaz",
-                TechDetail = "C#,.net Core, React.js",
+                ProjectName = "Ford",
+                TechDetail = "C#, WebForms, Oracle",
                 ModalDetail = Localizer["Modal10"],
                 Language = LangImage.CSharp,
                 Line = 10
-            });
-            
-            list.Add(new PortfolioDetailModel()
-            {
-                ProjectName = "Ford",
-                TechDetail = "C#, WebForms, Oracle",
-                ModalDetail = Localizer["Modal11"],
-                Language = LangImage.CSharp,
-                Line = 11
             });
 
             return list.OrderBy(t => t.Line).ToList();

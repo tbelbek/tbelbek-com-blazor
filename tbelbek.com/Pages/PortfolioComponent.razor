@@ -15,7 +15,7 @@
                 {
                     <div class="columns portfolio-item">
                         <div class="item-wrap">
-                            <a class="proj-modal" href="#modal-01" title="">
+                            <a class="proj-modal" href="#modal-@pfHeader.Line" title="">
                                 <img class="company-logo" src="@pfHeader.Image" alt=""/>
                                 <div class="overlay">
                                     <div class="portfolio-item-meta">
@@ -37,7 +37,7 @@
         --------------------------------------------------------------- -->
         @foreach (PortfolioDetailModel pfDetail in portfolioDetailData)
         {
-            <div id="modal-01" class="popup-modal mfp-hide">
+            <div id="modal-@pfDetail.Line" class="popup-modal mfp-hide">
                 <img class="scale-with-grid" src="@pfDetail.LanguageLogo" alt=""/>
                 <div class="description-box">
                     <h4>@pfDetail.ProjectName</h4>
