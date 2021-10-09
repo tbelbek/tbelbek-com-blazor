@@ -332,7 +332,7 @@
   <data name="SoftwareDevelopmentLead" xml:space="preserve">
     <value>Yazılım Geliştirme Lideri</value>
   </data>
-  <data name="SoftwareDevelopmentTechologyManager" xml:space="preserve">
+  <data name="SoftwareDevelopmentTechnologyManager" xml:space="preserve">
     <value>Yazılım Geliştirme Teknoloji Yöneticisi</value>
   </data>
 </root>
