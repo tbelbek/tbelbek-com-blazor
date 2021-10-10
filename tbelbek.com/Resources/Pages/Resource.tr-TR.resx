@@ -215,9 +215,6 @@
 
                     Kullanıcı yönetimi uygulaması, code first ile oracle veritabanı üzerinde geliştirilmiş bir MVC uygulaması, Filo yönetim sistemi ise veritabanı çok az bir şekilde kullanılarak sadece webservisler kullanılarak halen aktif olarak geliştirilmekte olan başka bir MVC uygulamasıdır.</value>
   </data>
-  <data name="Modal7" xml:space="preserve">
-    <value>İETT firması için geliştirilmekte olan ve İstanbul üzerinddeki toplu taşıma için kullanılan otobüslerin araç içi sistemlerini yönetecek olan bu proje araç bilgisayarları üzerinde gömülü olarak koşacak ve aynı geliştirilme sürecinde yazılan MVC uygulamaları ile entegre olarak çalışacak şekilde geliştirilmektedir. Bu projede de aktif olarak görev almış bulunmaktayım.</value>
-  </data>
   <data name="Modal8" xml:space="preserve">
     <value>Arçelik fabrikalarında kullanılan ürün bantlarındaki yazılımdan başlayıp arçelik kampüslerindeki giriş çıkışlara kadar değişen bir portföyde kurumsal proje geliştirme ve destek hizmetini aktif olarak sunmaktayım.</value>
   </data>

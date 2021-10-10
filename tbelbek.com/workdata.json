@@ -1,0 +1,271 @@
+﻿{
+  "WorkInfo": [
+    {
+      "Company": "KoçSistem",
+      "TitleKey": "SoftwareDevelopmentTechnologyManager",
+      "DateStartMonthKey": "Temmuz",
+      "DateEndMonthKey": "",
+      "StartYear": "2021",
+      "EndYear": "",
+      "Line": 5
+    },
+    {
+      "Company": "KoçSistem",
+      "TitleKey": "SoftwareDevelopmentLead",
+      "DateStartMonthKey": "Haziran",
+      "DateEndMonthKey": "Mart",
+      "StartYear": "2020",
+      "EndYear": "2021",
+      "Line": 4
+    },
+    {
+      "Company": "KoçSistem",
+      "TitleKey": "SeniorSoftwareDeveloper",
+      "DateStartMonthKey": "Mart",
+      "DateEndMonthKey": "Mart",
+      "StartYear": "2018",
+      "EndYear": "2020",
+      "Line": 3
+    },
+    {
+      "Company": "Antasya Software",
+      "TitleKey": "SoftwareSpecialist",
+      "DateStartMonthKey": "Aralik",
+      "DateEndMonthKey": "Mart",
+      "StartYear": "2016",
+      "EndYear": "2018",
+      "Line": 2
+    },
+    {
+      "Company": "BilgeAdam",
+      "TitleKey": "SoftwareConsultant",
+      "DateStartMonthKey": "Agustos",
+      "DateEndMonthKey": "Aralik",
+      "StartYear": "2014",
+      "EndYear": "2016",
+      "Line": 1
+    }
+  ],
+  "EduInfo": [
+    {
+      "SchoolStartName": "Beykent",
+      "MonthKey": "Haziran",
+      "Year": "2017",
+      "TagName": "EducationTag4",
+      "Line": 2
+    },
+    {
+      "SchoolStartName": "Marmara",
+      "MonthKey": "Haziran",
+      "Year": "2014",
+      "TagName": "EducationTag2",
+      "Line": 1
+    }
+  ],
+  "SkillInfo": [
+    {
+      "Skill": "ASP.NET",
+      "Class": "aspnet",
+      "Line": 1
+    },
+    {
+      "Skill": ".NET Core",
+      "Class": "netcore",
+      "Line": 2
+    },
+    {
+      "Skill": "C#",
+      "Class": "csharp",
+      "Line": 3
+    },
+    {
+      "Skill": "C++",
+      "Class": "cpp",
+      "Line": 4
+    },
+    {
+      "Skill": "MS SQL",
+      "Class": "mssql",
+      "Line": 5
+    },
+    {
+      "Skill": "MVC",
+      "Class": "mvc",
+      "Line": 6
+    },
+    {
+      "Skill": "Windows Apps",
+      "Class": "winapps",
+      "Line": 7
+    },
+    {
+      "Skill": "Linux",
+      "Class": "linux",
+      "Line": 8
+    },
+    {
+      "Skill": "DevSecOps",
+      "Class": "devops",
+      "Line": 9
+    },
+    {
+      "Skill": "Azure",
+      "Class": "azure",
+      "Line": 10
+    },
+    {
+      "Skill": "AGILE/SCRUM",
+      "Class": "linux",
+      "Line": 11
+    },
+    {
+      "Skill": "Queue structures, No-Sql databases, ORM Tools, ETC.",
+      "Class": "no-sql",
+      "Line": 12
+    }
+  ],
+  "PortfolioHeaderInfo": [
+    {
+      "Image": "images/borusanotomotiv-logo-facebook.jpg",
+      "Company": "Borusan Otomotiv",
+      "Explanation": "Web app with MVC",
+      "Line": 1
+    },
+    {
+      "Image": "images/boyner.jpg",
+      "Company": "Boyner",
+      "Explanation": "Web app with MVC",
+      "Line": 2
+    },
+    {
+      "Image": "images/kordsa.png",
+      "Company": "Kordsa",
+      "Explanation": "Web app with MVC",
+      "Line": 3
+    },
+    {
+      "Image": "images/mlp.png",
+      "Company": "Medical Park",
+      "Explanation": "Web app with MVC",
+      "Line": 4
+    },
+    {
+      "Image": "images/modyo_logo_v-copy.jpg",
+      "Company": "Modyo Signage",
+      "Explanation": "MVC, Web API, Android",
+      "Line": 5
+    },
+    {
+      "Image": "images/iett.jpg",
+      "Company": "İETT",
+      "Explanation": "Qt C++ app, Embedded",
+      "Line": 6
+    },
+    {
+      "Image": "images/ICRON-customer-logo-Arcelik-1.png",
+      "Company": "Arçelik",
+      "Explanation": "C#, VB, Webforms, Winforms, .Net Core",
+      "Line": 7
+    },
+    {
+      "Image": "images/bsh.png",
+      "Company": "Bosch Siemens Hausgerate",
+      "Explanation": "C#, .Net Core",
+      "Line": 8
+    },
+    {
+      "Image": "images/aygaz.png",
+      "Company": "Aygaz",
+      "Explanation": "C#, .Net Core",
+      "Line": 9
+    },
+    {
+      "Image": "images/ford.jpg",
+      "Company": "Ford",
+      "Explanation": "C#, MVC, WebForms",
+      "Line": 10
+    }
+  ],
+  "PortfolioDetailInfo": [
+    {
+      "Language": 0,
+      "LanguageLogo": "images/portfolio/csharp.png",
+      "ProjectName": "Borusan Otomotiv Uzatılmış Garanti",
+      "ModalKey": "Modal1",
+      "TechDetail": "C#, MVC. ASP.Net",
+      "Line": 1
+    },
+    {
+      "Language": 0,
+      "LanguageLogo": "images/portfolio/csharp.png",
+      "ProjectName": "Boyner GiftCard Automation",
+      "ModalKey": "Modal2",
+      "TechDetail": "C#, MVC. ASP.Net",
+      "Line": 2
+    },
+    {
+      "Language": 0,
+      "LanguageLogo": "images/portfolio/csharp.png",
+      "ProjectName": "Kordsa Global Octopus",
+      "ModalKey": "Modal3",
+      "TechDetail": "C#, MVC. ASP.Net",
+      "Line": 3
+    },
+    {
+      "Language": 0,
+      "LanguageLogo": "images/portfolio/csharp.png",
+      "ProjectName": "MedicalPark Reflex",
+      "ModalKey": "Modal4",
+      "TechDetail": "C#, MVC. ASP.Net",
+      "Line": 4
+    },
+    {
+      "Language": 0,
+      "LanguageLogo": "images/portfolio/csharp.png",
+      "ProjectName": "Modyo Signage App",
+      "ModalKey": "Modal5",
+      "TechDetail": "C#, MVC. ASP.Net, Web API",
+      "Line": 5
+    },
+    {
+      "Language": 1,
+      "LanguageLogo": "images/portfolio/cpp_logo.png",
+      "ProjectName": "AraçPc 2.0 IETT - AkYolBil 2.0 IETT",
+      "ModalKey": "Modal6",
+      "TechDetail": "C++, Qt Framework, Embedded Programming, C#, MVC. ASP.Net, Web API",
+      "Line": 6
+    },
+    {
+      "Language": 0,
+      "LanguageLogo": "images/portfolio/csharp.png",
+      "ProjectName": "Arçelik",
+      "ModalKey": "Modal8",
+      "TechDetail": "C#,.net Core, Winforms, Webforms",
+      "Line": 7
+    },
+    {
+      "Language": 0,
+      "LanguageLogo": "images/portfolio/csharp.png",
+      "ProjectName": "Bosch Siemens Hausgerate",
+      "ModalKey": "Modal9",
+      "TechDetail": "C#,.net Core, React.js",
+      "Line": 8
+    },
+    {
+      "Language": 0,
+      "LanguageLogo": "images/portfolio/csharp.png",
+      "ProjectName": "Aygaz",
+      "ModalKey": "Modal10",
+      "TechDetail": "C#,.net Core, React.js",
+      "Line": 9
+    },
+    {
+      "Language": 0,
+      "LanguageLogo": "images/portfolio/csharp.png",
+      "ProjectName": "Ford",
+      "ModalKey": "Modal11",
+      "TechDetail": "C#, WebForms, Oracle",
+      "Line": 10
+    }
+  ]
+}

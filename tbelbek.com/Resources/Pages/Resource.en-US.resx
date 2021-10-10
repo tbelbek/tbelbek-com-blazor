@@ -215,9 +215,6 @@
 
                     The user management application is an MVC application developed on the oracle database with code first, while the Fleet management system is another MVC application that is currently being actively developed using only webservers.</value>
   </data>
-  <data name="Modal7" xml:space="preserve">
-    <value>This project, which is being developed for İETT and which will manage the in-vehicle systems of buses used for public transportation on Istanbul, is designed to run embedded on vehicle computers and work in integration with MVC applications written during the same development process. I have been actively involved in this project.</value>
-  </data>
   <data name="Modal8" xml:space="preserve">
     <value>I actively provide corporate project development and support services in a portfolio ranging from the software in the product lines used in Arçelik factories to the in and out of the Arçelik campuses.</value>
   </data>
@@ -334,6 +331,6 @@ and learn more &lt;a class="smoothscroll" href="#about" style="color:darkorange;
     <value>Software Development Lead</value>
   </data>
   <data name="SoftwareDevelopmentTechnologyManager" xml:space="preserve">
-    <value>Software Development Techology Manager</value>
+    <value>Software Development Technology Manager</value>
   </data>
 </root>
