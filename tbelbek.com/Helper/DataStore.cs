@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Security.Policy;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 using Microsoft.Extensions.Localization;
 using tbelbek.com.Model;
 
@@ -12,15 +7,15 @@ namespace tbelbek.com.Helper
 {
     public class DataStore : IDataStore
     {
-        public SiteData SiteData { get; set; }
-        private IStringLocalizer Localizer { get; set; }
-        private ISiteDataParser SiteDataParser { get; }
-
         public DataStore(IStringLocalizer localizer, ISiteDataParser siteDataParser)
         {
             Localizer = localizer;
             SiteDataParser = siteDataParser;
         }
+
+        public SiteData SiteData { get; set; }
+        private IStringLocalizer Localizer { get; set; }
+        private ISiteDataParser SiteDataParser { get; }
 
         public List<WorkInfoModel> GetWorkInfo()
         {

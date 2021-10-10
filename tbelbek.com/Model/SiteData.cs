@@ -4,10 +4,6 @@ namespace tbelbek.com.Model
 {
     public class SiteData
     {
-        public SiteData()
-        {
-        }
-
         public List<WorkInfoModel> WorkInfo { get; set; }
         public List<EduInfoModel> EduInfo { get; set; }
         public List<SkillInfoModel> SkillInfo { get; set; }

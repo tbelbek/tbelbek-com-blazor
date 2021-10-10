@@ -8,8 +8,8 @@ namespace tbelbek.com.Helper
     {
         public SiteData GetSiteDataJson()
         {
-            string fileName = "workdata.json";
-            string jsonString = File.ReadAllText(fileName);
+            const string fileName = "workdata.json";
+            var jsonString = File.ReadAllText(fileName);
             return JsonSerializer.Deserialize<SiteData>(jsonString);
         }
     }

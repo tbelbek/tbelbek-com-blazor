@@ -4,10 +4,6 @@ namespace tbelbek.com.Model
 {
     public class WorkInfoModel : ISortInfo, IObjectFormatter
     {
-        public WorkInfoModel()
-        {
-        }
-
         public string Company { get; set; }
         public string Title { get; set; }
         public string TitleKey { get; set; }
@@ -16,7 +12,6 @@ namespace tbelbek.com.Model
         public string DateEndMonthKey { get; set; }
         public string StartYear { get; set; }
         public string EndYear { get; set; }
-        public int Line { get; set; }
 
         public void ObjectFormatter(IStringLocalizer localizer)
         {
@@ -25,5 +20,7 @@ namespace tbelbek.com.Model
                 : $"{localizer[DateStartMonthKey]} {StartYear} - {localizer[DateEndMonthKey]} {EndYear}";
             Title = localizer[TitleKey];
         }
+
+        public int Line { get; set; }
     }
 }
