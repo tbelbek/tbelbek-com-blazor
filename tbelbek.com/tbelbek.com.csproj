@@ -14,6 +14,7 @@
     <Content Remove="Resources\NewFolder\**" />
     <EmbeddedResource Remove="Resources\NewFolder\**" />
     <None Remove="Resources\NewFolder\**" />
+    <None Remove="..\.dockerignore"/>
   </ItemGroup>
 
   <ItemGroup>
