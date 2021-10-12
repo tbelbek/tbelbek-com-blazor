@@ -26,6 +26,7 @@ stages:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         buildContext: '$(Build.Repository.LocalPath)'
-        tags: |
-          $(tag)
+        tags: '$(tag)'
+    - script: 'docker rm /tbelbekcom'
+    - script: 'docker run -d -p 8096:80 --name tbelbekcom tbelbekcom'
         
