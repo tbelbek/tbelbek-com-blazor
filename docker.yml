@@ -26,7 +26,8 @@ stages:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         buildContext: '$(Build.Repository.LocalPath)'
-        tags: '$(tag)'
+        imageName: 'tbelbekcom'
+        tags: 'tbelbekcom'        
     - script: 'docker stop /tbelbekcom'
     - script: 'docker rm /tbelbekcom'
     - script: 'docker run -d -p 8096:80 --name tbelbekcom tbelbekcom'
