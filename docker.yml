@@ -21,13 +21,14 @@ stages:
       name: 'Default'
     steps:
     - task: Docker@2
-      displayName: Build an image
-      inputs:
-        command: build
-        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-        buildContext: '$(Build.Repository.LocalPath)'
-        imageName: 'tbelbekcom'
-        tags: 'tbelbekcom'        
+      # displayName: Build an image
+      # inputs:
+      #   command: build
+      #   dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+      #   buildContext: '$(Build.Repository.LocalPath)'
+      #   imageName: 'tbelbekcom'
+      #   tags: 'tbelbekcom'     
+    - script: 'docker build -t tbelbekcom .'   
     - script: 'docker stop /tbelbekcom'
     - script: 'docker rm /tbelbekcom'
     - script: 'docker run -d -p 8096:80 --name tbelbekcom tbelbekcom'
