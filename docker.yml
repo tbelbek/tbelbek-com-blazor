@@ -20,14 +20,12 @@ stages:
     pool:
       name: 'Default'
     steps:
-    - task: Docker@2
-      displayName: Build an image
-      inputs:
-        command: build
-        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-        buildContext: '$(Build.Repository.LocalPath)'
-        tags: '$(tag)'
+    - script: 'docker build -t tbelbekcom .'
+      displayName: 'Build Image'  
     - script: 'docker stop /tbelbekcom'
+      displayName: 'Stop running container'  
     - script: 'docker rm /tbelbekcom'
+      displayName: 'Remove old container'  
     - script: 'docker run -d -p 8096:80 --name tbelbekcom tbelbekcom'
+      displayName: 'Start new container'  
         
