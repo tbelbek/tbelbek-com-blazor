@@ -25,8 +25,6 @@ M
 tbelbek.com/Model/SiteData.cs,e\4\e4a97bd27c24b2abde07f9512d8d2c8cb3b6f07a
 O
 tbelbek.com/Helper/DataStore.cs,3\1\317503c72a8708bc9fc392be55b10044ab1a10e2
-I
-tbelbek.com/workdata.json,8\e\8e4a5f9d4e9f81aad58643e11ab4242b66cbaf93
 Z
 *tbelbek.com/Pages/PortfolioComponent.razor,6\8\68fdfbe12aabc5f112a278e88ee9b0acb3d28da3
 W
@@ -35,11 +33,13 @@ W
 ,tbelbek.com/Pages/TestimonialComponent.razor,f\0\f07ff4074284d0a8948ae7049719bef72abf4489
 V
 &tbelbek.com/Pages/AboutComponent.razor,f\6\f6e75f0eff5a0d914f43bea5d63862451eb839fd
-M
-tbelbek.com/Pages/Index.razor,1\5\157b3bf3b52e2949f8ed72a08874fc4178b3cbf3
 Y
 )tbelbek.com/Model/PortfolioDetailModel.cs,1\a\1acd5f1f1aa65c1d5dc89b8e975f6f81ec4f1b0e
-_
-/tbelbek.com/Resources/Pages/Resource.en-US.resx,1\5\151b66460345d053940a67e700cb0f72e10f3180
-_
-/tbelbek.com/Resources/Pages/Resource.tr-TR.resx,5\f\5f48d57d55be2f02f6110582ef5fae44033a6bb9
+N
+tbelbek.com/Pages/_Host.cshtml,7\7\7774aa35801b6547b832ec4d3bf474c122be0702
+F
+tbelbek.com/Startup.cs,8\1\813c7ac1492d6215786aba36a62d0412d3d496a8
+W
+'tbelbek.com/Pages/FooterComponent.razor,7\8\78a019ebfe3b9db34c0c700af5d1645946834a09
+N
+tbelbek.com/tbelbek.com.csproj,7\8\781051b06776fc6a6b72ed5b8f78522f7aaa1eea

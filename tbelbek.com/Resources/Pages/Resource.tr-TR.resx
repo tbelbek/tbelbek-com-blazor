@@ -297,7 +297,7 @@
     <value>Hakkımda</value>
   </data>
   <data name="Intro1" xml:space="preserve">
-    <value>Ben Tuğhan Belbek, sizlere &lt;span&gt; yazılım tasarımı &lt;/span&gt; veya &lt;span&gt;fizikçi&lt;/span&gt; olarak hizmet vermekten mutluluk duyacağım. Hakkımdaki detaylı bilgiler sayfanın &lt;a class="smoothscroll" href="#about" style="color:forestgreen;"&gt; aşağısında &lt;/a&gt;bulunmaktadır.</value>
+    <value>Ben Tuğhan Belbek, sizlere &lt;span&gt; yazılım geliştirme &lt;/span&gt; veya &lt;span&gt;fizikçi&lt;/span&gt; olarak hizmet vermekten mutluluk duyacağım. Hakkımdaki detaylı bilgiler sayfanın &lt;a class="smoothscroll" href="#about" style="color:forestgreen;"&gt; aşağısında &lt;/a&gt;bulunmaktadır.</value>
   </data>
   <data name="Projelerim" xml:space="preserve">
     <value>Projelerim</value>
