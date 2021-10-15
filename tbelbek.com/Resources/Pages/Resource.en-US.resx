@@ -294,7 +294,7 @@
     <value>Hide Menu</value>
   </data>
   <data name="Intro1" xml:space="preserve">
-    <value>I'm a &lt;span&gt;software developer tecchnology manager&lt;/span&gt; and &lt;span&gt;physicist&lt;/span&gt; from Istanbul/Turkey. Let's &lt;a class="smoothscroll" href="#about" style="color:forestgreen;"&gt;start scrolling&lt;/a&gt;
+    <value>I'm a &lt;span&gt;software developer technology manager&lt;/span&gt; and &lt;span&gt;physicist&lt;/span&gt; from Istanbul/Turkey. Let's &lt;a class="smoothscroll" href="#about" style="color:forestgreen;"&gt;start scrolling&lt;/a&gt;
 and learn more &lt;a class="smoothscroll" href="#about" style="color:darkorange;"&gt;about me&lt;/a&gt;,</value>
   </data>
   <data name="Giris" xml:space="preserve">
