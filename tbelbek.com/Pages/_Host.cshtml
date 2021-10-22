@@ -11,13 +11,17 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-56CQ2S');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-56CQ2S');</script>
     <!-- End Google Tag Manager -->
 
     <!--- Basic Page Needs
@@ -30,56 +34,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- CSS
     ================================================== -->
-    <link href="css/default.css" rel="stylesheet"/>
-    <link href="css/fonts.css" rel="stylesheet"/>
-    <link href="css/layout.css" rel="stylesheet"/>
-    <link href="css/media-queries.css" rel="stylesheet"/>
-    <link href="css/magnific-popup.css" rel="stylesheet"/>
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/layout.css" rel="stylesheet" />
+    <link href="css/media-queries.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
 
-    <link href="Site.css" rel="stylesheet"/>
+    <link href="Site.css" rel="stylesheet" />
     <!-- Script
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" href="images/Image.jpg">
-    <meta charset="utf-8"/>
+    <link rel="shortcut icon" href="images/T.png">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @if (new List<int> { 11, 12, 1, 2 }.Contains(DateTime.Now.Month))
     {
         <script src="js/snow.js"></script>
     }
 </head>
+
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56CQ2S"
-            height="0" width="0" style="display:none;visibility:hidden">
-    </iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56CQ2S" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-<component type="typeof(Index)" render-mode="ServerPrerendered"/>
-<component type="typeof(AboutComponent)" render-mode="ServerPrerendered"/>
-<component type="typeof(ResumeComponent)" render-mode="ServerPrerendered"/>
-<component type="typeof(PortfolioComponent)" render-mode="ServerPrerendered"/>
-<component type="typeof(TestimonialComponent)" render-mode="ServerPrerendered"/>
-<component type="typeof(FooterComponent)" render-mode="ServerPrerendered"/>
+    <component type="typeof(Index)" render-mode="ServerPrerendered" />
+    <component type="typeof(AboutComponent)" render-mode="ServerPrerendered" />
+    <component type="typeof(ResumeComponent)" render-mode="ServerPrerendered" />
+    <component type="typeof(PortfolioComponent)" render-mode="ServerPrerendered" />
+    <component type="typeof(TestimonialComponent)" render-mode="ServerPrerendered" />
+    <component type="typeof(FooterComponent)" render-mode="ServerPrerendered" />
 
 
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/init.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/waypoints.js"></script>
-<script src="js/magnific-popup.js"></script>
-<script src="js/jquery.fittext.js"></script>
-<script src="_framework/blazor.server.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="_framework/blazor.server.js"></script>
 
-<script>
+    <script>
         var initPage = function () {
             loadInit();
         };
     </script>
 </body>
+
 </html>
