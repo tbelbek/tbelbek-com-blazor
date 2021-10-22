@@ -12,8 +12,8 @@
     {
       "Company": "KoçSistem",
       "TitleKey": "SoftwareDevelopmentLead",
-      "DateStartMonthKey": "Haziran",
-      "DateEndMonthKey": "Mart",
+      "DateStartMonthKey": "Mart",
+      "DateEndMonthKey": "Haziran",
       "StartYear": "2020",
       "EndYear": "2021",
       "Line": 4
