@@ -118,7 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutTxt" xml:space="preserve">
-    <value>1989 yılının Kasım ayının 23'ünde İstanbul - Kadıköy'de doğdum. Çocukluğum doğduğum semtte geçti. Bilgisayarla ve teknolojisiyle ilk tanışmam ilkokul yıllarında okulun bilgisayar laboratuvarında asistan olmamla başladı, parça takıp çıkarmak ve format atmak gibi. İlk başlarda hobi olarak başlayan bu durum, zamanla sevgiye dönüştü. Şimdiyse size hizmetlerimi sunmaktan mutluluk duyacağım.</value>
+    <value>Basitçe söylemek gerekirse, gerçekten sevdiğim şey hakkında tutkuluyum. Başka bir deyişle, bu sitede bir iş özgeçmişi değil, sevdiği bir hobiye tutkuyla bağlı olan bir kişinin kariyerinde nasıl ilerlediğiniz göreceksiniz. &lt;ul&gt;
+    &lt;li&gt;C# Developer&lt;/li&gt;
+    &lt;li&gt;C++ Developer&lt;/li&gt;
+    &lt;li&gt;Takım Lideri&lt;/li&gt;
+    &lt;li&gt;Mentör&lt;/li&gt;
+    &lt;li&gt;Amatör sunucu, moderatör&lt;/li&gt;
+    &lt;li&gt;Eski Atlet&lt;/li&gt;
+&lt;/ul&gt;</value>
   </data>
   <data name="Adiniz" xml:space="preserve">
     <value>Adınız</value>

@@ -118,7 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutTxt" xml:space="preserve">
-    <value>I was born on the 23rd of November of 1989 in Kadikoy, Istanbul. My childhood was in the neighborhood where I was born. My first acquaintance with computer and technology started when I became an assistant in the computer lab of the school during elementary school years, such as inserting and removing parts and formatting. This situation, which started as a hobby at first, gradually turned into love. Now I will be happy to offer you my services.</value>
+    <value>I am passionate about what I actually love. In other words, in this site, you will see the steps in the
+career of a person who is passionate about a hobby he loves, not a job.CV.&lt;ul&gt;
+    &lt;li&gt;C# Developer&lt;/li&gt;
+    &lt;li&gt;C++ Developer&lt;/li&gt;
+    &lt;li&gt;Team Lead&lt;/li&gt;
+    &lt;li&gt;Mentor&lt;/li&gt;
+    &lt;li&gt;Amateur presenter, moderator&lt;/li&gt;
+    &lt;li&gt;Ex-Athlete&lt;/li&gt;
+&lt;/ul&gt;</value>
   </data>
   <data name="Adiniz" xml:space="preserve">
     <value>Name</value>

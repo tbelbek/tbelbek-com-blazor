@@ -25,14 +25,8 @@ M
 tbelbek.com/Model/SiteData.cs,e\4\e4a97bd27c24b2abde07f9512d8d2c8cb3b6f07a
 O
 tbelbek.com/Helper/DataStore.cs,3\1\317503c72a8708bc9fc392be55b10044ab1a10e2
-Z
-*tbelbek.com/Pages/PortfolioComponent.razor,6\8\68fdfbe12aabc5f112a278e88ee9b0acb3d28da3
-W
-'tbelbek.com/Pages/ResumeComponent.razor,5\1\5168e9b0e1d86887453ea520890b86d57eda808a
 \
 ,tbelbek.com/Pages/TestimonialComponent.razor,f\0\f07ff4074284d0a8948ae7049719bef72abf4489
-V
-&tbelbek.com/Pages/AboutComponent.razor,f\6\f6e75f0eff5a0d914f43bea5d63862451eb839fd
 Y
 )tbelbek.com/Model/PortfolioDetailModel.cs,1\a\1acd5f1f1aa65c1d5dc89b8e975f6f81ec4f1b0e
 N
