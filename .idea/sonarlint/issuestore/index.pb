@@ -37,3 +37,17 @@ W
 'tbelbek.com/Pages/FooterComponent.razor,7\8\78a019ebfe3b9db34c0c700af5d1645946834a09
 N
 tbelbek.com/tbelbek.com.csproj,7\8\781051b06776fc6a6b72ed5b8f78522f7aaa1eea
+_
+/tbelbek.com/Resources/Pages/Resource.tr-TR.resx,5\f\5f48d57d55be2f02f6110582ef5fae44033a6bb9
+M
+tbelbek.com/Pages/Index.razor,1\5\157b3bf3b52e2949f8ed72a08874fc4178b3cbf3
+Z
+*tbelbek.com/Pages/PortfolioComponent.razor,6\8\68fdfbe12aabc5f112a278e88ee9b0acb3d28da3
+V
+&tbelbek.com/Pages/AboutComponent.razor,f\6\f6e75f0eff5a0d914f43bea5d63862451eb839fd
+_
+/tbelbek.com/Resources/Pages/Resource.en-US.resx,1\5\151b66460345d053940a67e700cb0f72e10f3180
+W
+'tbelbek.com/Pages/ResumeComponent.razor,5\1\5168e9b0e1d86887453ea520890b86d57eda808a
+I
+tbelbek.com/workdata.json,8\e\8e4a5f9d4e9f81aad58643e11ab4242b66cbaf93
