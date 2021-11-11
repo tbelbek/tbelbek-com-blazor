@@ -332,19 +332,19 @@ and learn more &lt;a class="smoothscroll" href="#about" style="color:darkorange;
   <data name="SoftwareConsultant" xml:space="preserve">
     <value>Software Consultant</value>
   </data>
-    <data name="SeniorSoftwareDeveloper" xml:space="preserve">
+  <data name="SeniorSoftwareDeveloper" xml:space="preserve">
     <value>Senior Software Developer</value>
   </data>
-    <data name="SoftwareDevelopmentLead" xml:space="preserve">
+  <data name="SoftwareDevelopmentLead" xml:space="preserve">
     <value>Software Development Lead</value>
   </data>
-    <data name="SoftwareDevelopmentTechnologyManager" xml:space="preserve">
+  <data name="SoftwareDevelopmentTechnologyManager" xml:space="preserve">
     <value>Software Development Technology Manager</value>
   </data>
-    <data name="Testimonial3" xml:space="preserve">
-    <value>Technologia longa est, vita brevis, occasio praeceps, debug periculosus, iudicium difficile.</value>
+  <data name="Testimonial3" xml:space="preserve">
+    <value>Technologia longa, vita brevis, occasio praeceps, debug periculosus, iudicium difficile.</value>
   </data>
-    <data name="Quote3" xml:space="preserve">
+  <data name="Quote3" xml:space="preserve">
     <value>The code works on localhost</value>
   </data>
 </root>
