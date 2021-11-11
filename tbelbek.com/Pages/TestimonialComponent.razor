@@ -29,6 +29,14 @@
                                 <cite>@L["Quote2"]</cite>
                             </blockquote>
                         </li> <!-- slide ends -->
+                        <li>
+                            <blockquote>
+                                <p>
+                                    @L["Testimonial3"]
+                                </p>
+                                <cite>@L["Quote3"]</cite>
+                            </blockquote>
+                        </li> <!-- slide ends -->
                     </ul>
                 </div> <!-- div.flexslider ends -->
             </div> <!-- div.flex-container ends -->
@@ -37,6 +45,7 @@
 </section> <!-- Testimonials Section End-->
 
 @code{
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
@@ -44,4 +53,5 @@
             await JS.InvokeVoidAsync("loadInit");
         }
     }
+
 }
