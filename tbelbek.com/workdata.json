@@ -1,12 +1,21 @@
 ﻿{
   "WorkInfo": [
     {
+      "Company": "doWhile Consulting Scandinavia AB",
+      "TitleKey": "SeniorSoftwareDeveloper",
+      "DateStartMonthKey": "Mart",
+      "DateEndMonthKey": "",
+      "StartYear": "2022",
+      "EndYear": "",
+      "Line": 6
+    },
+    {
       "Company": "KoçSistem",
       "TitleKey": "SoftwareDevelopmentTechnologyManager",
       "DateStartMonthKey": "Temmuz",
-      "DateEndMonthKey": "",
+      "DateEndMonthKey": "Mart",
       "StartYear": "2021",
-      "EndYear": "",
+      "EndYear": "2022",
       "Line": 5
     },
     {

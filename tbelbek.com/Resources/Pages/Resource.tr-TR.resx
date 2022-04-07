@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+    <!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,66 +59,66 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+        <xsd:element name="root" msdata:IsDataSet="true">
             <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string"/>
+                            <xsd:attribute name="type" type="xsd:string"/>
+                            <xsd:attribute name="mimetype" type="xsd:string"/>
+                            <xsd:attribute ref="xml:space"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complexType>
+                            <xsd:attribute name="alias" type="xsd:string"/>
+                            <xsd:attribute name="name" type="xsd:string"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+                            <xsd:attribute ref="xml:space"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
             </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <data name="AboutTxt" xml:space="preserve">
-    <value>Basitçe söylemek gerekirse, gerçekten sevdiğim şey hakkında tutkuluyum. Başka bir deyişle, bu sitede bir iş özgeçmişi değil, sevdiği bir hobiye tutkuyla bağlı olan bir kişinin kariyerinde nasıl ilerlediğiniz göreceksiniz. &lt;ul&gt;
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AboutTxt" xml:space="preserve">
+        <value>Basitçe söylemek gerekirse, gerçekten sevdiğim şey hakkında tutkuluyum. Başka bir deyişle, bu sitede bir iş özgeçmişi değil, sevdiği bir hobiye tutkuyla bağlı olan bir kişinin kariyerinde nasıl ilerlediğiniz göreceksiniz. &lt;ul&gt;
     &lt;li&gt;C# Developer&lt;/li&gt;
     &lt;li&gt;C++ Developer&lt;/li&gt;
     &lt;li&gt;Takım Lideri&lt;/li&gt;
@@ -126,223 +126,223 @@
     &lt;li&gt;Amatör sunucu, moderatör&lt;/li&gt;
     &lt;li&gt;Eski Atlet&lt;/li&gt;
 &lt;/ul&gt;</value>
-  </data>
-  <data name="Adiniz" xml:space="preserve">
-    <value>Adınız</value>
-  </data>
-  <data name="AdresVeTelefon" xml:space="preserve">
-    <value>Adres ve telefon</value>
-  </data>
-  <data name="Agustos" xml:space="preserve">
-    <value>Ağustos</value>
-  </data>
-  <data name="Aralik" xml:space="preserve">
-    <value>Aralık</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Kapat</value>
-  </data>
-  <data name="CvIndir" xml:space="preserve">
-    <value>Cv'm için tıklayın.</value>
-  </data>
-  <data name="Education1" xml:space="preserve">
-    <value>HTML, CSS3 JavaScript ve jQuery alanlarında Nisan 2015 tarihinden beri uzmanlık sertifikam bulunmaktadır.</value>
-  </data>
-  <data name="Education2" xml:space="preserve">
-    <value>Marka değeri herkesçe bilinen BilgeAdam ve İŞKUR ile ortak düzenlenen bu programa 20 bin kişi arasından seçilip başarıyla tamamladım.</value>
-  </data>
-  <data name="Education3" xml:space="preserve">
-    <value>Hayatımda yaptığım en yanlış ve en doğru tercih olarak değerlendirebileceğim bu dönemde hayatımda belki de akademik anlamda yaşayabileceğim en sert mücadeleri verdim. Ama sonunda bittiğinde bana oldukça çok şey kattığını gördüm. Analiz yeteneği, zorluklarla mücadele etme gibi parayla satın alınamayacak çok şey öğrendim.</value>
-  </data>
-  <data name="Education4" xml:space="preserve">
-    <value>Yaklaşık 1 yıla yakın sürede devam ettiğim bu kursta aynı zamanda Photoshop, Flash kullanımı üzerinde de eğitim aldım.</value>
-  </data>
-  <data name="EKartvizitIndir" xml:space="preserve">
-    <value>E-Kartvizit İndir</value>
-  </data>
-  <data name="Email" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="FromMyPerspective" xml:space="preserve">
-    <value>İŞİME BAKIŞ AÇIM</value>
-  </data>
-  <data name="Gonder" xml:space="preserve">
-    <value>Gönder</value>
-  </data>
-  <data name="Hakkimda" xml:space="preserve">
-    <value>Hakkımda</value>
-  </data>
-  <data name="HataOlustu" xml:space="preserve">
-    <value>Hata oluştu</value>
-  </data>
-  <data name="Haziran" xml:space="preserve">
-    <value>Haziran</value>
-  </data>
-  <data name="Iletisim" xml:space="preserve">
-    <value>İLETİŞİM</value>
-  </data>
-  <data name="IletisimDetaylari" xml:space="preserve">
-    <value>İletişim Detayları</value>
-  </data>
-  <data name="IletisimExplanation" xml:space="preserve">
-    <value>Aşağıdaki formu doldurun, en kısa zamanda iletişime geçelim.</value>
-  </data>
-  <data name="Konu" xml:space="preserve">
-    <value>Konu</value>
-  </data>
-  <data name="Mart" xml:space="preserve">
-    <value>Mart</value>
-  </data>
-  <data name="Mesaj" xml:space="preserve">
-    <value>Mesaj</value>
-  </data>
-  <data name="MesajGonderildi" xml:space="preserve">
-    <value>Mesajınız gönderildi, teşekkürler!</value>
-  </data>
-  <data name="Modal1" xml:space="preserve">
-    <value>Borusan Otomotiv firmasında, “uzatılmış garanti” adı verilen ek hizmet sistemlerinin yönetiminde kullanılan web portal uygulamasını geliştirmiş bulunmaktayım. Bu uygulama üzerinde Dapper ORM toolu kullanılmış olup, performans odaklı bir geliştirme yapılmıştır. Bahsi geçen uygulama, yine bir MVC uygulaması olarak geliştirilmiştir.</value>
-  </data>
-  <data name="Modal10" xml:space="preserve">
-    <value>Bayilerde kullanılan prim yönetim sistemi ve bayi simülasyon sisteminin altyapısını yöneten hizmetlerin aktif olarak geliştirmesini yapmaktayım.</value>
-  </data>
-  <data name="Modal2" xml:space="preserve">
-    <value>Boyner Büyük Mağazacılık firmasında, hali  hazırda kullanmakta oldukları yönetim modüllerinin üzerine geliştirilmesini istedikleri “hediye kartı” MVC uygulamasının geliştirilmesinde baştan sona görev aldım. Bu uygulama veritabanı olarak oracle kullanmakta idi ve Code-First kullanarak oracle veritabanı üzerinde uygulama geliştirme fırsatı buldum.</value>
-  </data>
-  <data name="Modal3" xml:space="preserve">
-    <value>Kordsa Global firması için bir stok yönetim uygulaması geliştirmiş bulunmaktayım. Bu uygulama, arayüz olarak angularJS kullanmakta olup, arka planda çok büyük veritabanı verilerini işlemekte ve bunları çok kısa sürede kullanıcı arayüzünde yükleyip göstermekle görevli bulunmaktadır. Uygulamayı devir aldığımda müşteri ile ciddi sorunlar yaşanmış ve çalışma performansı ile ilgili olarak ciddi problemler bulunmakta idi. Gerek sosyal yeteneklerimi gerekse de teknik becerilerimi kullanarak uygulamayı ve müşteri memnuniyetini üst düzeylere çıkarmaya çalıştım ve başarılı olduğuma inanıyorum.</value>
-  </data>
-  <data name="Modal4" xml:space="preserve">
-    <value>MedicalPark Sağlık Grubu için, hali hazırda kullanılan ve çok sorunlu şekilde addettikleri hasta bilgileri yönetim sistemi uygulamasının yeni versiyonunu geliştirme projesinde teknik danışman olarak görev yaptım. Görev aldığım firmada çalışan ekiple ortak bir çalışma gerçekleştirerek bu uygulamanın yeni versiyonunu hem winform, hem de web üzerinde çalışan versiyonlarının geliştirilmesinde hem performans darboğazlarının çözümünde hem de iş yükünü paylaşma konusunda müşterimiz olan firmaya mümkün olduğu kadar verimli bir şekilde hizmetlerimi sunmaya çalıştım. Proje süresince 6 aya yakın bir danışmanlık vermiş bulunmaktayım. Bu projede, ElasticSearch ve Dapper teknolojilerini de kullanma fırsatı buldum.</value>
-  </data>
-  <data name="Modal5" xml:space="preserve">
-    <value>MODYO A.Ş. firması için de geliştirilen ve yakın zamanda testlerine başlanacak olan “digital signage” yani araç içi reklam/medya gösterimi uygulamasının geliştirilmesinde,  baştan sona görev almış bulunmaktayım. Bu uygulama, iki parçadan oluşuyor olup, iki arkadaşım android tarafını geliştirirken ben de tek başıma Web Portal tarafını geliştirmiş ve yayına hazır hale getirmiş bulunmaktayım. Bu uygulama, yapı olarak yine mikroservis mimarisini ve dil olarak da C# kullanılarak geliştirilmiş olup, MVC ve Web API teknolojilerini kullanmaktadır. Aynı zamanda önceki paragrafta ve bu paragrafta bahsedilen uygulamaların hepsinde mq yapılarını aktif olarak kullanmış bulunmaktayım.</value>
-  </data>
-  <data name="Modal6" xml:space="preserve">
-    <value>İETT firması için geliştirilmekte olan ve İstanbul üzerindeki toplu taşıma sistemlerini yönetecek olan bu proje, MVC tarafında mikroservis mimarisi ile MVC uygulaması ve Web tabanlı olarak geliştirilmekte olup, ben kullanıcı yönetim sistemi ve filo yönetim sistemi uygulamaları geliştirme süreçlerinde görev aldım/almaktayım.  MVC uygulamaları araç bilgisayarları ile server yazılımları üzerinden haberleşerek gerekli yol, görev, ücretlendirme gibi bilgileri anlık olarak veritabanı ve ilgili depolama sistemlerine kaydetmekte ve aynı uygulamalardan bu veriler aynı zamanda canlı olarak izlenebilmektedir. Proje, yaklaşık 18 aylık bir proje olup Haziran 2018 ayında canlıya alınacaktır.
+    </data>
+    <data name="Adiniz" xml:space="preserve">
+        <value>Adınız</value>
+    </data>
+    <data name="AdresVeTelefon" xml:space="preserve">
+        <value>Adres ve telefon</value>
+    </data>
+    <data name="Agustos" xml:space="preserve">
+        <value>Ağustos</value>
+    </data>
+    <data name="Aralik" xml:space="preserve">
+        <value>Aralık</value>
+    </data>
+    <data name="Close" xml:space="preserve">
+        <value>Kapat</value>
+    </data>
+    <data name="CvIndir" xml:space="preserve">
+        <value>Cv'm için tıklayın.</value>
+    </data>
+    <data name="Education1" xml:space="preserve">
+        <value>HTML, CSS3 JavaScript ve jQuery alanlarında Nisan 2015 tarihinden beri uzmanlık sertifikam bulunmaktadır.</value>
+    </data>
+    <data name="Education2" xml:space="preserve">
+        <value>Marka değeri herkesçe bilinen BilgeAdam ve İŞKUR ile ortak düzenlenen bu programa 20 bin kişi arasından seçilip başarıyla tamamladım.</value>
+    </data>
+    <data name="Education3" xml:space="preserve">
+        <value>Hayatımda yaptığım en yanlış ve en doğru tercih olarak değerlendirebileceğim bu dönemde hayatımda belki de akademik anlamda yaşayabileceğim en sert mücadeleri verdim. Ama sonunda bittiğinde bana oldukça çok şey kattığını gördüm. Analiz yeteneği, zorluklarla mücadele etme gibi parayla satın alınamayacak çok şey öğrendim.</value>
+    </data>
+    <data name="Education4" xml:space="preserve">
+        <value>Yaklaşık 1 yıla yakın sürede devam ettiğim bu kursta aynı zamanda Photoshop, Flash kullanımı üzerinde de eğitim aldım.</value>
+    </data>
+    <data name="EKartvizitIndir" xml:space="preserve">
+        <value>E-Kartvizit İndir</value>
+    </data>
+    <data name="Email" xml:space="preserve">
+        <value>Email</value>
+    </data>
+    <data name="FromMyPerspective" xml:space="preserve">
+        <value>İŞİME BAKIŞ AÇIM</value>
+    </data>
+    <data name="Gonder" xml:space="preserve">
+        <value>Gönder</value>
+    </data>
+    <data name="Hakkimda" xml:space="preserve">
+        <value>Hakkımda</value>
+    </data>
+    <data name="HataOlustu" xml:space="preserve">
+        <value>Hata oluştu</value>
+    </data>
+    <data name="Haziran" xml:space="preserve">
+        <value>Haziran</value>
+    </data>
+    <data name="Iletisim" xml:space="preserve">
+        <value>İLETİŞİM</value>
+    </data>
+    <data name="IletisimDetaylari" xml:space="preserve">
+        <value>İletişim Detayları</value>
+    </data>
+    <data name="IletisimExplanation" xml:space="preserve">
+        <value>Aşağıdaki formu doldurun, en kısa zamanda iletişime geçelim.</value>
+    </data>
+    <data name="Konu" xml:space="preserve">
+        <value>Konu</value>
+    </data>
+    <data name="Mart" xml:space="preserve">
+        <value>Mart</value>
+    </data>
+    <data name="Mesaj" xml:space="preserve">
+        <value>Mesaj</value>
+    </data>
+    <data name="MesajGonderildi" xml:space="preserve">
+        <value>Mesajınız gönderildi, teşekkürler!</value>
+    </data>
+    <data name="Modal1" xml:space="preserve">
+        <value>Borusan Otomotiv firmasında, “uzatılmış garanti” adı verilen ek hizmet sistemlerinin yönetiminde kullanılan web portal uygulamasını geliştirmiş bulunmaktayım. Bu uygulama üzerinde Dapper ORM toolu kullanılmış olup, performans odaklı bir geliştirme yapılmıştır. Bahsi geçen uygulama, yine bir MVC uygulaması olarak geliştirilmiştir.</value>
+    </data>
+    <data name="Modal10" xml:space="preserve">
+        <value>Bayilerde kullanılan prim yönetim sistemi ve bayi simülasyon sisteminin altyapısını yöneten hizmetlerin aktif olarak geliştirmesini yapmaktayım.</value>
+    </data>
+    <data name="Modal2" xml:space="preserve">
+        <value>Boyner Büyük Mağazacılık firmasında, hali  hazırda kullanmakta oldukları yönetim modüllerinin üzerine geliştirilmesini istedikleri “hediye kartı” MVC uygulamasının geliştirilmesinde baştan sona görev aldım. Bu uygulama veritabanı olarak oracle kullanmakta idi ve Code-First kullanarak oracle veritabanı üzerinde uygulama geliştirme fırsatı buldum.</value>
+    </data>
+    <data name="Modal3" xml:space="preserve">
+        <value>Kordsa Global firması için bir stok yönetim uygulaması geliştirmiş bulunmaktayım. Bu uygulama, arayüz olarak angularJS kullanmakta olup, arka planda çok büyük veritabanı verilerini işlemekte ve bunları çok kısa sürede kullanıcı arayüzünde yükleyip göstermekle görevli bulunmaktadır. Uygulamayı devir aldığımda müşteri ile ciddi sorunlar yaşanmış ve çalışma performansı ile ilgili olarak ciddi problemler bulunmakta idi. Gerek sosyal yeteneklerimi gerekse de teknik becerilerimi kullanarak uygulamayı ve müşteri memnuniyetini üst düzeylere çıkarmaya çalıştım ve başarılı olduğuma inanıyorum.</value>
+    </data>
+    <data name="Modal4" xml:space="preserve">
+        <value>MedicalPark Sağlık Grubu için, hali hazırda kullanılan ve çok sorunlu şekilde addettikleri hasta bilgileri yönetim sistemi uygulamasının yeni versiyonunu geliştirme projesinde teknik danışman olarak görev yaptım. Görev aldığım firmada çalışan ekiple ortak bir çalışma gerçekleştirerek bu uygulamanın yeni versiyonunu hem winform, hem de web üzerinde çalışan versiyonlarının geliştirilmesinde hem performans darboğazlarının çözümünde hem de iş yükünü paylaşma konusunda müşterimiz olan firmaya mümkün olduğu kadar verimli bir şekilde hizmetlerimi sunmaya çalıştım. Proje süresince 6 aya yakın bir danışmanlık vermiş bulunmaktayım. Bu projede, ElasticSearch ve Dapper teknolojilerini de kullanma fırsatı buldum.</value>
+    </data>
+    <data name="Modal5" xml:space="preserve">
+        <value>MODYO A.Ş. firması için de geliştirilen ve yakın zamanda testlerine başlanacak olan “digital signage” yani araç içi reklam/medya gösterimi uygulamasının geliştirilmesinde,  baştan sona görev almış bulunmaktayım. Bu uygulama, iki parçadan oluşuyor olup, iki arkadaşım android tarafını geliştirirken ben de tek başıma Web Portal tarafını geliştirmiş ve yayına hazır hale getirmiş bulunmaktayım. Bu uygulama, yapı olarak yine mikroservis mimarisini ve dil olarak da C# kullanılarak geliştirilmiş olup, MVC ve Web API teknolojilerini kullanmaktadır. Aynı zamanda önceki paragrafta ve bu paragrafta bahsedilen uygulamaların hepsinde mq yapılarını aktif olarak kullanmış bulunmaktayım.</value>
+    </data>
+    <data name="Modal6" xml:space="preserve">
+        <value>İETT firması için geliştirilmekte olan ve İstanbul üzerindeki toplu taşıma sistemlerini yönetecek olan bu proje, MVC tarafında mikroservis mimarisi ile MVC uygulaması ve Web tabanlı olarak geliştirilmekte olup, ben kullanıcı yönetim sistemi ve filo yönetim sistemi uygulamaları geliştirme süreçlerinde görev aldım/almaktayım.  MVC uygulamaları araç bilgisayarları ile server yazılımları üzerinden haberleşerek gerekli yol, görev, ücretlendirme gibi bilgileri anlık olarak veritabanı ve ilgili depolama sistemlerine kaydetmekte ve aynı uygulamalardan bu veriler aynı zamanda canlı olarak izlenebilmektedir. Proje, yaklaşık 18 aylık bir proje olup Haziran 2018 ayında canlıya alınacaktır.
 
                     Kullanıcı yönetimi uygulaması, code first ile oracle veritabanı üzerinde geliştirilmiş bir MVC uygulaması, Filo yönetim sistemi ise veritabanı çok az bir şekilde kullanılarak sadece webservisler kullanılarak halen aktif olarak geliştirilmekte olan başka bir MVC uygulamasıdır.</value>
-  </data>
-  <data name="Modal8" xml:space="preserve">
-    <value>Arçelik fabrikalarında kullanılan ürün bantlarındaki yazılımdan başlayıp arçelik kampüslerindeki giriş çıkışlara kadar değişen bir portföyde kurumsal proje geliştirme ve destek hizmetini aktif olarak sunmaktayım.</value>
-  </data>
-  <data name="Modal9" xml:space="preserve">
-    <value>Bosch firmasının türkiye depolarındaki tır ve depo giriş çıkış yönetimlerini yapan, müşteri memnuniyeti ve inovasyon ödülleri kazanmış olan projenin bakım, ek geliştirme ve destek hizmetini sunmaktayım.</value>
-  </data>
-  <data name="Nisan" xml:space="preserve">
-    <value>Nisan</value>
-  </data>
-  <data name="Quote1" xml:space="preserve">
-    <value>Konfüçyus</value>
-  </data>
-  <data name="Quote2" xml:space="preserve">
-    <value>T. Belbek</value>
-  </data>
-  <data name="SentTweets" xml:space="preserve">
-    <value>@@redstreetwalker tarafından gönderilen tweetler</value>
-  </data>
-  <data name="Skills" xml:space="preserve">
-    <value>YETENEKLERİM</value>
-  </data>
-  <data name="SkillsExplanation" xml:space="preserve">
-    <value>Teknolojiler ve programlar hakkındaki uzmanlık düzeylerimi aşağıda görebilirsiniz.</value>
-  </data>
-  <data name="Testimonial1" xml:space="preserve">
-    <value>Sevdiğiniz bir işi seçin, böylelikle hayatınızda bir gün bile olsun çalışmak zorunda kalmamış olursunuz.</value>
-  </data>
-  <data name="Testimonial2" xml:space="preserve">
-    <value>Ben en sevdiğim işi seçtim.</value>
-  </data>
-  <data name="ConsultedCompanies" xml:space="preserve">
-    <value>Danışmanlık verdiğim şirketler</value>
-  </data>
-  <data name="Education" xml:space="preserve">
-    <value>EĞİTİM</value>
-  </data>
-  <data name="EducationTag1" xml:space="preserve">
-    <value>C#, MVC, HTML, CSS, JS ve MS SQL Standartları</value>
-  </data>
-  <data name="EducationTag2" xml:space="preserve">
-    <value>Lisans - Fizik Bölümü</value>
-  </data>
-  <data name="EducationTag3" xml:space="preserve">
-    <value>HTML, CSS, JS Standartları</value>
-  </data>
-  <data name="Now" xml:space="preserve">
-    <value>Günümüz</value>
-  </data>
-  <data name="Work" xml:space="preserve">
-    <value>İŞ</value>
-  </data>
-  <data name="SoftwareSpecialist" xml:space="preserve">
-    <value>Yazılım Uzmanı</value>
-  </data>
-  <data name="Modal11" xml:space="preserve">
-    <value>Türkiye genelindeki tüm Ford bayilerinin ve müşterilerinin satış sonrası işlemlerini yaptığı "Servis Yönetim Sistemi" portalı</value>
-  </data>
-  <data name="EducationTag4" xml:space="preserve">
-    <value>Yüksek Lisans - Bilişim Sistemleri Yönetimi</value>
-  </data>
-  <data name="SchoolLife" xml:space="preserve">
-    <value>Okul</value>
-  </data>
-  <data name="Test" xml:space="preserve">
-    <value>Test</value>
-  </data>
-  <data name="PersonalWebpageTitle" xml:space="preserve">
-    <value>T. Belbek Kişisel Web Sayfası</value>
-  </data>
-  <data name="Fikirler" xml:space="preserve">
-    <value>Fikirler</value>
-  </data>
-  <data name="Gecmisim" xml:space="preserve">
-    <value>Geçmİşİm</value>
-  </data>
-  <data name="Giris" xml:space="preserve">
-    <value>Giriş</value>
-  </data>
-  <data name="HakkimdaNav" xml:space="preserve">
-    <value>Hakkımda</value>
-  </data>
-  <data name="Intro1" xml:space="preserve">
-    <value>Ben Tuğhan Belbek, sizlere &lt;span&gt; yazılım geliştirme &lt;/span&gt; veya &lt;span&gt;fizikçi&lt;/span&gt; olarak hizmet vermekten mutluluk duyacağım. Hakkımdaki detaylı bilgiler sayfanın &lt;a class="smoothscroll" href="#about" style="color:forestgreen;"&gt; aşağısında &lt;/a&gt;bulunmaktadır.</value>
-  </data>
-  <data name="Projelerim" xml:space="preserve">
-    <value>Projelerim</value>
-  </data>
-  <data name="DownloadCv" xml:space="preserve">
-    <value>Ya da CV'mi hızlıca buradan indirebilirsiniz.</value>
-  </data>
-  <data name="HideMenu" xml:space="preserve">
-    <value>Menüyü Gizle</value>
-  </data>
-  <data name="ShowMenu" xml:space="preserve">
-    <value>Menüyü Göster</value>
-  </data>
-  <data name="Merhaba" xml:space="preserve">
-    <value>Merhaba.</value>
-  </data>
-  <data name="Temmuz" xml:space="preserve">
-    <value>Temmuz</value>
-  </data>
-  <data name="University" xml:space="preserve">
-    <value>Üniversitesi</value>
-  </data>
-  <data name="SoftwareConsultant" xml:space="preserve">
-    <value>Yazılım Danışmanı</value>
-  </data>
+    </data>
+    <data name="Modal8" xml:space="preserve">
+        <value>Arçelik fabrikalarında kullanılan ürün bantlarındaki yazılımdan başlayıp arçelik kampüslerindeki giriş çıkışlara kadar değişen bir portföyde kurumsal proje geliştirme ve destek hizmetini aktif olarak sunmaktayım.</value>
+    </data>
+    <data name="Modal9" xml:space="preserve">
+        <value>Bosch firmasının türkiye depolarındaki tır ve depo giriş çıkış yönetimlerini yapan, müşteri memnuniyeti ve inovasyon ödülleri kazanmış olan projenin bakım, ek geliştirme ve destek hizmetini sunmaktayım.</value>
+    </data>
+    <data name="Nisan" xml:space="preserve">
+        <value>Nisan</value>
+    </data>
+    <data name="Quote1" xml:space="preserve">
+        <value>Konfüçyus</value>
+    </data>
+    <data name="Quote2" xml:space="preserve">
+        <value>T. Belbek</value>
+    </data>
+    <data name="SentTweets" xml:space="preserve">
+        <value>@@redstreetwalker tarafından gönderilen tweetler</value>
+    </data>
+    <data name="Skills" xml:space="preserve">
+        <value>YETENEKLERİM</value>
+    </data>
+    <data name="SkillsExplanation" xml:space="preserve">
+        <value>Teknolojiler ve programlar hakkındaki uzmanlık düzeylerimi aşağıda görebilirsiniz.</value>
+    </data>
+    <data name="Testimonial1" xml:space="preserve">
+        <value>Sevdiğiniz bir işi seçin, böylelikle hayatınızda bir gün bile olsun çalışmak zorunda kalmamış olursunuz.</value>
+    </data>
+    <data name="Testimonial2" xml:space="preserve">
+        <value>Ben en sevdiğim işi seçtim.</value>
+    </data>
+    <data name="ConsultedCompanies" xml:space="preserve">
+        <value>Danışmanlık verdiğim şirketler</value>
+    </data>
+    <data name="Education" xml:space="preserve">
+        <value>EĞİTİM</value>
+    </data>
+    <data name="EducationTag1" xml:space="preserve">
+        <value>C#, MVC, HTML, CSS, JS ve MS SQL Standartları</value>
+    </data>
+    <data name="EducationTag2" xml:space="preserve">
+        <value>Lisans - Fizik Bölümü</value>
+    </data>
+    <data name="EducationTag3" xml:space="preserve">
+        <value>HTML, CSS, JS Standartları</value>
+    </data>
+    <data name="Now" xml:space="preserve">
+        <value>Günümüz</value>
+    </data>
+    <data name="Work" xml:space="preserve">
+        <value>İŞ</value>
+    </data>
+    <data name="SoftwareSpecialist" xml:space="preserve">
+        <value>Yazılım Uzmanı</value>
+    </data>
+    <data name="Modal11" xml:space="preserve">
+        <value>Türkiye genelindeki tüm Ford bayilerinin ve müşterilerinin satış sonrası işlemlerini yaptığı "Servis Yönetim Sistemi" portalı</value>
+    </data>
+    <data name="EducationTag4" xml:space="preserve">
+        <value>Yüksek Lisans - Bilişim Sistemleri Yönetimi</value>
+    </data>
+    <data name="SchoolLife" xml:space="preserve">
+        <value>Okul</value>
+    </data>
+    <data name="Test" xml:space="preserve">
+        <value>Test</value>
+    </data>
+    <data name="PersonalWebpageTitle" xml:space="preserve">
+        <value>T. Belbek Kişisel Web Sayfası</value>
+    </data>
+    <data name="Fikirler" xml:space="preserve">
+        <value>Fikirler</value>
+    </data>
+    <data name="Gecmisim" xml:space="preserve">
+        <value>Geçmİşİm</value>
+    </data>
+    <data name="Giris" xml:space="preserve">
+        <value>Giriş</value>
+    </data>
+    <data name="HakkimdaNav" xml:space="preserve">
+        <value>Hakkımda</value>
+    </data>
+    <data name="Intro1" xml:space="preserve">
+        <value>Ben Tuğhan Belbek, sizlere &lt;span&gt; yazılım geliştirme &lt;/span&gt; veya &lt;span&gt;fizikçi&lt;/span&gt; olarak hizmet vermekten mutluluk duyacağım. Hakkımdaki detaylı bilgiler sayfanın &lt;a class="smoothscroll" href="#about" style="color:forestgreen;"&gt; aşağısında &lt;/a&gt;bulunmaktadır.</value>
+    </data>
+    <data name="Projelerim" xml:space="preserve">
+        <value>Projelerim</value>
+    </data>
+    <data name="DownloadCv" xml:space="preserve">
+        <value>Ya da CV'mi hızlıca buradan indirebilirsiniz.</value>
+    </data>
+    <data name="HideMenu" xml:space="preserve">
+        <value>Menüyü Gizle</value>
+    </data>
+    <data name="ShowMenu" xml:space="preserve">
+        <value>Menüyü Göster</value>
+    </data>
+    <data name="Merhaba" xml:space="preserve">
+        <value>Merhaba.</value>
+    </data>
+    <data name="Temmuz" xml:space="preserve">
+        <value>Temmuz</value>
+    </data>
+    <data name="University" xml:space="preserve">
+        <value>Üniversitesi</value>
+    </data>
+    <data name="SoftwareConsultant" xml:space="preserve">
+        <value>Yazılım Danışmanı</value>
+    </data>
     <data name="SeniorSoftwareDeveloper" xml:space="preserve">
-    <value>Kıdemli Yazılım Geliştirme Uzmanı</value>
-  </data>
+        <value>Kıdemli Yazılım Geliştirme Uzmanı</value>
+    </data>
     <data name="SoftwareDevelopmentLead" xml:space="preserve">
-    <value>Yazılım Geliştirme Lideri</value>
-  </data>
+        <value>Yazılım Geliştirme Lideri</value>
+    </data>
     <data name="SoftwareDevelopmentTechnologyManager" xml:space="preserve">
-    <value>Yazılım Geliştirme Teknoloji Yöneticisi</value>
-  </data>
+        <value>Yazılım Geliştirme Teknoloji Yöneticisi</value>
+    </data>
     <data name="Testimonial3" xml:space="preserve">
-    <value>Teknoloji uzun, hayat kısa, fırsat kaçıcı, debug aldatıcı, karar zor.</value>
-  </data>
+        <value>Teknoloji uzun, hayat kısa, fırsat kaçıcı, debug aldatıcı, karar zor.</value>
+    </data>
     <data name="Quote3" xml:space="preserve">
-    <value>Lokalde çalışan kod</value>
-  </data>
+        <value>Lokalde çalışan kod</value>
+    </data>
 </root>
