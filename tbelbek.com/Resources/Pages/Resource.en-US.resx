@@ -302,7 +302,7 @@ career of a person who is passionate about a hobby he loves, not a job.&lt;ul&gt
         <value>Hide Menu</value>
     </data>
     <data name="Intro1" xml:space="preserve">
-        <value>I'm a &lt;span&gt;software developer&lt;/span&gt;,&lt;span&gt;SCRUM master&lt;/span&gt; and &lt;span&gt;physicist&lt;/span&gt; from Göteborg/Sweden. Let's &lt;a class="smoothscroll" href="#about" style="color:forestgreen;"&gt;start scrolling&lt;/a&gt;and learn more &lt;a class="smoothscroll" href="#about" style="color:darkorange;"&gt;about me&lt;/a&gt;,</value>
+        <value>I'm a &lt;span&gt;software developer&lt;/span&gt;, &lt;span&gt;Scrum Master&lt;/span&gt; and &lt;span&gt;physicist&lt;/span&gt; from Göteborg/Sweden. Let's &lt;a class="smoothscroll" href="#about" style="color:forestgreen;"&gt; start scrolling&lt;/a&gt; and learn more &lt;a class="smoothscroll" href="#about" style="color:darkorange;"&gt;about me&lt;/a&gt;,</value>
     </data>
     <data name="Giris" xml:space="preserve">
         <value>Home</value>
