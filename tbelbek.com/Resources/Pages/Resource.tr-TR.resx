@@ -345,4 +345,7 @@
     <data name="Quote3" xml:space="preserve">
         <value>Lokalde çalışan kod</value>
     </data>
+    <data name="Senior Software Engineer" xml:space="preserve">
+        <value>Senior Software Engineer</value>
+    </data>
 </root>
