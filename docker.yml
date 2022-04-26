@@ -22,8 +22,8 @@ stages:
     steps:
     - script: 'docker build -t tbelbekcom .'
       displayName: 'Build Image'  
-    - script: 'docker stop /tbelbekcom'
-      displayName: 'Stop running container'  
+    # - script: 'docker stop /tbelbekcom'
+    #   displayName: 'Stop running container'  
     - script: 'docker rm /tbelbekcom'
       displayName: 'Remove old container'  
     - script: 'docker run -d -p 8096:80 --name tbelbekcom tbelbekcom'
