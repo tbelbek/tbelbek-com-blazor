@@ -1,6 +1,15 @@
 ﻿{
   "WorkInfo": [
     {
+      "Company": "Volvo Car Company",
+      "TitleKey": "SoftwareFactoryEngineerConsultant",
+      "DateStartMonthKey": "Mayis",
+      "DateEndMonthKey": "",
+      "StartYear": "2022",
+      "EndYear": "",
+      "Line": 7
+    },
+    {
       "Company": "doWhile Consulting Scandinavia AB",
       "TitleKey": "SeniorSoftwareEngineer",
       "DateStartMonthKey": "Mart",
