@@ -420,4 +420,7 @@
         <value>Yazılım Fabrikası Mühendisi - Danışman</value>
         <comment/>
     </data>
+    <data name="Modal12" xml:space="preserve">
+        <value>Volvo'nun önümüzdeki yıllarda elektrikli araç konseptini inşa edeceği SPA2 platformunun gömülü yazılımlarının geliştirme ve CI/CD süreçlerinin yönetiminde görev almaktayım.</value>
+    </data>
 </root>
