@@ -1,9 +1,8 @@
-﻿namespace tbelbek.com.Model
-{
-    public enum LangImage
-    {
+﻿namespace tbelbek.com.Model {
+    public enum LangImage {
         CSharp,
-        CPlusPlus
+        CPlusPlus,
+        Python
     }
 
 }
