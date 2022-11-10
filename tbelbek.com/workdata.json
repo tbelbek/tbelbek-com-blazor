@@ -1,6 +1,5 @@
 ﻿{
-  "WorkInfo": [
-    {
+  "WorkInfo": [{
       "Company": "Volvo Car Company",
       "TitleKey": "SoftwareFactoryEngineerConsultant",
       "DateStartMonthKey": "Mayis",
@@ -64,8 +63,7 @@
       "Line": 1
     }
   ],
-  "EduInfo": [
-    {
+  "EduInfo": [{
       "SchoolStartName": "Beykent",
       "MonthKey": "Haziran",
       "Year": "2017",
@@ -80,8 +78,7 @@
       "Line": 1
     }
   ],
-  "SkillInfo": [
-    {
+  "SkillInfo": [{
       "Skill": "ASP.NET",
       "Class": "aspnet",
       "Line": 1
@@ -142,8 +139,7 @@
       "Line": 12
     }
   ],
-  "PortfolioHeaderInfo": [
-    {
+  "PortfolioHeaderInfo": [{
       "Image": "images/borusanotomotiv-logo-facebook.jpg",
       "Company": "Borusan Otomotiv",
       "Explanation": "Web app with MVC",
@@ -202,10 +198,16 @@
       "Company": "Ford",
       "Explanation": "C#, MVC, WebForms",
       "Line": 10
-    }
-  ],
-  "PortfolioDetailInfo": [
+    },
     {
+      "Image": "images/volvo.png",
+      "Company": "Volvo Car Company",
+      "Explanation": "Python, Linux, Embedded",
+      "Line": 11
+    }
+
+  ],
+  "PortfolioDetailInfo": [{
       "Language": 0,
       "LanguageLogo": "images/portfolio/csharp.png",
       "ProjectName": "Borusan Otomotiv Uzatılmış Garanti",
@@ -284,6 +286,14 @@
       "ModalKey": "Modal11",
       "TechDetail": "C#, WebForms, Oracle",
       "Line": 10
+    },
+    {
+      "Language": 2,
+      "LanguageLogo": "images/portfolio/python.png",
+      "ProjectName": "Volvo",
+      "ModalKey": "Modal12",
+      "TechDetail": "Python, Linux, Embedded",
+      "Line": 11
     }
   ]
 }
