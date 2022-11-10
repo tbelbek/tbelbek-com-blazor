@@ -28,3 +28,4 @@ stages:
             displayName: "Remove old container"
           - script: "docker run -d -p 8096:80 --name tbelbekcom tbelbekcom"
             displayName: "Start new container"
+
