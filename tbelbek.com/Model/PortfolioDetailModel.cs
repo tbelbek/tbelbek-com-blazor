@@ -19,15 +19,12 @@ namespace tbelbek.com.Model {
             switch (Language) {
                 case LangImage.CSharp:
                     return "images/portfolio/csharp.png";
-                    break;
                 case LangImage.CPlusPlus:
                     return "images/portfolio/cpp_logo.png";
-                    break;
                 case LangImage.Python:
                     return "images/portfolio/python.png";
-                    break;
                 default:
-                    break;
+                    return string.Empty;
             }
         }
     }
