@@ -118,8 +118,7 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="AboutTxt" xml:space="preserve">
-        <value>I am passionate about what I actually love. In other words, in this site, you will see the steps in thecareer of a person who is passionate about a hobby he loves, not a job.&lt;ul&gt;    &lt;li&gt;C# Developer&lt;/li&gt;    &lt;li&gt;C++ Developer&lt;/li&gt;    &lt;li&gt;Team Lead&lt;/li&gt;    &lt;li&gt;Mentor&lt;/li&gt;    &lt;li&gt;Amateur presenter, moderator&lt;/li&gt;    &lt;li&gt;Ex-Athlete&lt;/li&gt;&lt;/ul&gt;</value>
-        <comment/>
+        <value>I am passionate about what I actually love. In other words, in this site, you will see the steps in the career of a person who is passionate about a hobby he loves, not a job.&lt;ul&gt;    &lt;li&gt;C# Developer&lt;/li&gt;    &lt;li&gt;C++ Developer&lt;/li&gt;    &lt;li&gt;Team Lead&lt;/li&gt;    &lt;li&gt;Mentor&lt;/li&gt;    &lt;li&gt;Amateur presenter, moderator&lt;/li&gt;    &lt;li&gt;Ex-Athlete&lt;/li&gt;&lt;/ul&gt;</value>
     </data>
     <data name="Adiniz" xml:space="preserve">
         <value>Name</value>
